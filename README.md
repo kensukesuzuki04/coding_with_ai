@@ -1,5 +1,10 @@
 # Pre-Class Setup Guide: U.S. State GDP Mapping Project
 
+> This setup guide is currently for Clark University Economics Department `ECON206`.
+> It may also be reused for other courses in the future, with additional course numbers added as needed.
+>
+> This README was created by GitHub Copilot based on Professor Suzuki's instructions and revisions.
+
 This guide is for students to complete **before class**.
 
 The goal is to make sure everyone arrives with the required software installed so that, during class, we can focus on running the code, installing Python packages, seeing errors, and fixing them.
@@ -11,7 +16,7 @@ Please install the following applications before class:
 1. **Visual Studio Code**
 2. **Python**
 3. **Quarto**
-4. **A PDF engine for Quarto** (optional, only if you want PDF output)
+4. **A PDF engine for Quarto**
 
 Do **not** install project-specific Python packages yet. We will do that in class.
 
@@ -91,10 +96,9 @@ You should see a version number.
 
 ---
 
-## 4. Install a PDF Engine for Quarto (Optional)
+## 4. Install a PDF Engine for Quarto
 
-This is only needed if you want Quarto to render directly to **PDF**.
-If you only need HTML output, you can skip this for now.
+This is required so that Quarto can render directly to **PDF** during class.
 
 Recommended option:
 
@@ -107,9 +111,8 @@ Alternative:
 
 Recommended for students:
 
-- If you are unsure, install **Quarto first** and leave LaTeX for later.
-- In many cases, HTML output is enough for class.
-- If we need PDF later, we can install TinyTeX.
+- If you are unsure, install **TinyTeX through Quarto**.
+- This is the simplest option for most students.
 
 How to test later:
 
@@ -119,7 +122,34 @@ quarto render draft.qmd --to pdf
 
 ---
 
-## 5. Install VS Code Extensions
+## 5. Create a GitHub Account and Activate Copilot Student Access
+
+Before class, create a GitHub account if you do not already have one.
+
+Sign up:
+
+- https://github.com/signup
+
+If you are eligible for GitHub Student Developer Pack benefits, apply here:
+
+- https://education.github.com/pack
+
+After your student benefits are approved, activate GitHub Copilot through your GitHub account.
+
+Copilot information:
+
+- https://github.com/features/copilot
+
+What to do:
+
+1. Create or sign in to your GitHub account.
+2. Apply for the GitHub Student Developer Pack if you are eligible.
+3. Confirm that GitHub Copilot is available on your account.
+4. In VS Code, sign in with that GitHub account when prompted.
+
+---
+
+## 6. Install VS Code Extensions
 
 After opening VS Code, install these extensions from the Extensions panel:
 
@@ -141,13 +171,14 @@ How to install:
 
 ---
 
-## 6. Confirm Everything Works
+## 7. Confirm Everything Works
 
 Before class, please verify all of the following:
 
 - VS Code opens normally.
 - Python runs in the terminal.
 - Quarto runs in the terminal.
+- Your GitHub account is ready to use in VS Code.
 - The Python extension is installed in VS Code.
 - The Jupyter extension is installed in VS Code.
 - The Quarto extension is installed in VS Code.
@@ -167,7 +198,7 @@ py --version
 
 ---
 
-## 7. What Not to Install Yet
+## 8. What Not to Install Yet
 
 Please **do not** install the project Python packages before class.
 
@@ -185,7 +216,7 @@ We will install these together in class and use any installation problems as par
 
 ---
 
-## 8. What We Will Do in Class
+## 9. What We Will Do in Class
 
 In class, we will:
 
@@ -199,7 +230,7 @@ In class, we will:
 
 ---
 
-## 9. Troubleshooting Before Class
+## 10. Troubleshooting Before Class
 
 If something does not work, try these checks first.
 
@@ -224,7 +255,7 @@ If something does not work, try these checks first.
 
 ---
 
-## 10. Recommended Folder Setup
+## 11. Recommended Folder Setup
 
 Before class, create a folder on your computer where you will store the project files.
 
@@ -244,7 +275,7 @@ Put all class files there once they are distributed.
 
 ---
 
-## 11. Submission / Record Options
+## 12. Submission / Record Options
 
 If you want to publish your work later:
 
