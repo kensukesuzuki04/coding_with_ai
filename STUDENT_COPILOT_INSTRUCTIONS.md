@@ -1,4 +1,4 @@
-# Student Copilot Instructions
+# GitHub Copilot Instructions
 
 ## Purpose
 
