@@ -1,4 +1,4 @@
-# Clark Economics Coding Guide
+# Guide to Use AI for Coding (for Economics Students)
 
 This repository contains setup and writing guides for Clark University Economics Department courses `ECON206` and `ECON10`.
 
