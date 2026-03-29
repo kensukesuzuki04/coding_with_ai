@@ -13,6 +13,7 @@ This guide explains how students should use GitHub Copilot in this course, why w
 - [Good Prompt Examples](#good-prompt-examples)
 - [Using Agent Roles (Reviewer, Coauthor)](#using-agent-roles-reviewer-coauthor)
 - [Class Rules for Responsible Use](#class-rules-for-responsible-use)
+- [Required AI Statement in Submissions](#required-ai-statement-in-submissions)
 - [Quick Workflow](#quick-workflow)
 - [Final Reminder](#final-reminder)
 
@@ -160,6 +161,24 @@ Important:
 - Do not submit AI-generated content that you cannot explain.
 - Follow all course policies on collaboration and academic integrity.
 - When required, disclose where Copilot assisted your work.
+
+## Required AI Statement in Submissions
+
+If you used AI tools (including GitHub Copilot) for an assignment, you must include an `AI Statement` section in your submission.
+
+The statement must confirm both points:
+
+1. How you used AI.
+2. That the final submission is your own work and understanding.
+
+Copy-paste template:
+
+```text
+AI Statement:
+I used [tool name] to help with [brainstorming / code drafting / editing / debugging / formatting].
+I reviewed, tested, and revised all AI-assisted output.
+I confirm that this submission reflects my own understanding and that I take full responsibility for all content.
+```
 
 ## Quick Workflow
 
