@@ -231,7 +231,13 @@ Before class, create a folder on your computer where you will store the project 
 Example:
 
 ```text
-Documents/gdp-mapping-project/
+Documents/ECON206/gdp-mapping-project/
+```
+
+Or, if you prefer organizing by category first:
+
+```text
+Documents/lecture/econ206/gdp-mapping-project/
 ```
 
 Put all class files there once they are distributed.
