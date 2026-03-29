@@ -23,7 +23,37 @@ Do **not** install project-specific Python packages yet. We will do that in clas
 
 ---
 
-## 1. Install Visual Studio Code
+## 1. Create a GitHub Account and Activate Copilot Student Access
+
+Please complete this step first.
+Approval for student access may take time, so it is better to begin early.
+
+Before class, create a GitHub account if you do not already have one.
+
+Sign up:
+
+- https://github.com/signup
+
+If you are eligible for GitHub Student Developer Pack benefits, apply here:
+
+- https://education.github.com/pack
+
+After your student benefits are approved, activate GitHub Copilot through your GitHub account.
+
+Copilot information:
+
+- https://github.com/features/copilot
+
+What to do:
+
+1. Create or sign in to your GitHub account.
+2. Apply for the GitHub Student Developer Pack if you are eligible.
+3. Confirm that GitHub Copilot is available on your account.
+4. In VS Code, sign in with that GitHub account when prompted.
+
+---
+
+## 2. Install Visual Studio Code
 
 Download:
 
@@ -42,7 +72,7 @@ After installation, open VS Code once to make sure it starts normally.
 
 ---
 
-## 2. Install Python
+## 3. Install Python
 
 Download:
 
@@ -64,6 +94,13 @@ If you are using Windows and have never used the command line before:
 3. Open **Command Prompt**.
 4. A black or dark window will appear. You can type commands there.
 
+If you are using a Mac and have never used the command line before:
+
+1. Press `Command + Space` to open Spotlight search.
+2. Type `Terminal`.
+3. Open the **Terminal** application.
+4. A window will appear where you can type commands.
+
 Then run:
 
 ```bash
@@ -83,11 +120,14 @@ To keep your test files organized, first create a folder for setup checks.
 Example:
 
 ```text
-Documents/ECON206/setup-test/
+Documents/ECON206/setup_test/
 ```
 
 You can create this folder in File Explorer.
-For example, open your `Documents` folder, create a folder named `ECON206`, and inside it create another folder named `setup-test`.
+For example, open your `Documents` folder, create a folder named `ECON206`, and inside it create another folder named `setup_test`.
+
+On a Mac, you can do the same thing in Finder.
+Open your `Documents` folder, create a folder named `ECON206`, and inside it create another folder named `setup_test`.
 
 Inside that folder, create a file named `test.py` with the following content:
 
@@ -99,7 +139,7 @@ The easiest way to run this test is in VS Code:
 
 1. Open VS Code.
 2. Click `File` > `Open Folder`.
-3. Open your `setup-test` folder.
+3. Open your `setup_test` folder.
 4. In the top menu, click `Terminal` > `New Terminal`.
 5. A terminal will open at the bottom of the VS Code window.
 
@@ -125,7 +165,7 @@ If you see that message, Python is installed correctly and can run a file.
 
 ---
 
-## 3. Install Quarto
+## 4. Install Quarto
 
 Download:
 
@@ -139,8 +179,9 @@ What to do:
 
 How to test:
 
-If you already opened the VS Code terminal in the `setup-test` folder, you can use that same terminal.
+If you already opened the VS Code terminal in the `setup_test` folder, you can use that same terminal.
 Otherwise, on Windows, open Command Prompt using the steps above.
+If you are using a Mac, open Terminal using the steps above.
 
 Then run:
 
@@ -154,7 +195,7 @@ If you see a version number, Quarto is installed correctly.
 
 ---
 
-## 4. Install a PDF Engine for Quarto
+## 5. Install a PDF Engine for Quarto
 
 This is required so that Quarto can render directly to **PDF** during class.
 
@@ -174,7 +215,7 @@ Recommended for students:
 
 How to test Quarto and PDF rendering:
 
-In the same `setup-test` folder, create a file named `test.qmd` with the following content:
+In the same `setup_test` folder, create a file named `test.qmd` with the following content:
 
 ```markdown
 ---
@@ -197,33 +238,6 @@ quarto render test.qmd --to pdf
 
 If everything is installed correctly, Quarto should generate a PDF file in the same folder.
 You should see a new file named `test.pdf`.
-
----
-
-## 5. Create a GitHub Account and Activate Copilot Student Access
-
-Before class, create a GitHub account if you do not already have one.
-
-Sign up:
-
-- https://github.com/signup
-
-If you are eligible for GitHub Student Developer Pack benefits, apply here:
-
-- https://education.github.com/pack
-
-After your student benefits are approved, activate GitHub Copilot through your GitHub account.
-
-Copilot information:
-
-- https://github.com/features/copilot
-
-What to do:
-
-1. Create or sign in to your GitHub account.
-2. Apply for the GitHub Student Developer Pack if you are eligible.
-3. Confirm that GitHub Copilot is available on your account.
-4. In VS Code, sign in with that GitHub account when prompted.
 
 ---
 
@@ -359,6 +373,7 @@ Put all class files there once they are distributed.
 
 Complete this before class:
 
+- Create a GitHub account and start Copilot student registration
 - Install VS Code
 - Install Python
 - Install Quarto
