@@ -15,12 +15,12 @@ Copilot is a learning assistant, not a replacement for your own reasoning.
 
 ## What Students Should Do
 
-### 1. Before class
+### 1. Before starting a task
 
 - Sign in to GitHub in VS Code.
 - Confirm Copilot is active.
-- Open the class folder in VS Code.
-- Review the assignment prompt before asking Copilot for help.
+- Open your working folder in VS Code.
+- Review the task prompt before asking Copilot for help.
 
 ### 2. During coding
 
