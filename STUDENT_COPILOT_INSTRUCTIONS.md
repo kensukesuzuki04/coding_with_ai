@@ -4,6 +4,18 @@
 
 This guide explains how students should use GitHub Copilot in this course, why we use it, and how it supports learning.
 
+## Table of Contents
+
+- [Purpose](#purpose)
+- [Why We Use Copilot](#why-we-use-copilot)
+- [What Students Should Do](#what-students-should-do)
+- [How Copilot Helps You](#how-copilot-helps-you)
+- [Good Prompt Examples](#good-prompt-examples)
+- [Using Agent Roles (Reviewer, Coauthor)](#using-agent-roles-reviewer-coauthor)
+- [Class Rules for Responsible Use](#class-rules-for-responsible-use)
+- [Quick Workflow](#quick-workflow)
+- [Final Reminder](#final-reminder)
+
 ## Why We Use Copilot
 
 - To help you start coding tasks faster.
