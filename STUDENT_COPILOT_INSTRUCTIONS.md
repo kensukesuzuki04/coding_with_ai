@@ -53,6 +53,52 @@ Copilot is a learning assistant, not a replacement for your own reasoning.
 - Create a Quarto section with a figure, table, and short interpretation.
 - Refactor this code to be easier to read.
 
+## Using Agent Roles (Reviewer, Coauthor)
+
+### Why this matters
+
+- Different tasks need different feedback styles.
+- A `reviewer` role can focus on errors, logic gaps, and missing evidence.
+- A `coauthor` role can focus on structure, clarity, and argument quality.
+- Using role-specific instructions gives more consistent and useful responses.
+
+### How to set up agents in a class folder
+
+1. In your project folder, create `.github/agents/`.
+2. Add a file for each role, for example:
+	- `.github/agents/reviewer.agent.md`
+	- `.github/agents/coauthor.agent.md`
+3. Put clear instructions in each file (what to check, output format, tone).
+4. Save files and reopen Copilot Chat if needed.
+
+Minimal example for `coauthor.agent.md`:
+
+```markdown
+---
+description: Coauthor feedback for economics writing and revisions
+tools: ['codebase', 'editFiles', 'runCommands']
+---
+
+You are a coauthor for an economics writing assignment.
+Give direct, constructive feedback.
+Focus on argument, evidence, and clarity.
+Return feedback with these sections:
+1. What Works
+2. Major Issues
+3. Minor Issues
+4. Next Steps
+```
+
+### How to use these agents
+
+1. Open Copilot Chat in VS Code.
+2. Select the custom agent role (for example `coauthor` or `reviewer`) if it appears in the chat mode or agent list.
+3. If your setup exposes slash commands, run the role command (for example `/coauthor`).
+4. Paste your draft or ask the agent to review the current file.
+5. Revise your document based on the feedback and run the role again.
+
+Tip: Use `coauthor` for draft improvement and `reviewer` for stricter checks before submission.
+
 ## Class Rules for Responsible Use
 
 - You are responsible for all submitted work.
