@@ -57,7 +57,14 @@ What to do:
 
 How to test:
 
-Open a terminal or command prompt and run:
+If you are using Windows and have never used the command line before:
+
+1. Click the Start menu.
+2. Type `cmd`.
+3. Open **Command Prompt**.
+4. A black or dark window will appear. You can type commands there.
+
+Then run:
 
 ```bash
 python --version
@@ -79,13 +86,24 @@ Example:
 Documents/ECON206/setup-test/
 ```
 
+You can create this folder in File Explorer.
+For example, open your `Documents` folder, create a folder named `ECON206`, and inside it create another folder named `setup-test`.
+
 Inside that folder, create a file named `test.py` with the following content:
 
 ```python
 print("Python is working")
 ```
 
-Then open a terminal in that folder and run:
+The easiest way to run this test is in VS Code:
+
+1. Open VS Code.
+2. Click `File` > `Open Folder`.
+3. Open your `setup-test` folder.
+4. In the top menu, click `Terminal` > `New Terminal`.
+5. A terminal will open at the bottom of the VS Code window.
+
+Then run:
 
 ```bash
 python test.py
@@ -103,6 +121,8 @@ You should see:
 Python is working
 ```
 
+If you see that message, Python is installed correctly and can run a file.
+
 ---
 
 ## 3. Install Quarto
@@ -119,13 +139,18 @@ What to do:
 
 How to test:
 
-Open a terminal and run:
+If you already opened the VS Code terminal in the `setup-test` folder, you can use that same terminal.
+Otherwise, on Windows, open Command Prompt using the steps above.
+
+Then run:
 
 ```bash
 quarto --version
 ```
 
 You should see a version number.
+
+If you see a version number, Quarto is installed correctly.
 
 ---
 
@@ -162,6 +187,8 @@ format: pdf
 If you can read this in a PDF file, Quarto and the PDF engine are working.
 ```
 
+If file extensions are hidden on your computer, make sure the file is really named `test.qmd`, not `test.qmd.txt`.
+
 Then run:
 
 ```bash
@@ -169,6 +196,7 @@ quarto render test.qmd --to pdf
 ```
 
 If everything is installed correctly, Quarto should generate a PDF file in the same folder.
+You should see a new file named `test.pdf`.
 
 ---
 
@@ -232,6 +260,8 @@ Before class, please verify all of the following:
 - The Python extension is installed in VS Code.
 - The Jupyter extension is installed in VS Code.
 - The Quarto extension is installed in VS Code.
+- Your `test.py` file runs successfully.
+- Your `test.qmd` file renders to PDF successfully.
 
 You can test with these commands:
 
@@ -322,13 +352,6 @@ Documents/lecture/econ206/gdp-mapping-project/
 ```
 
 Put all class files there once they are distributed.
-- Google Sites does **not** natively render Markdown files.
-
-For Google Sites, the best options are:
-
-1. Copy and paste the content from the Markdown file into a Google Sites page.
-2. Convert the Markdown to a Google Doc and embed or link it.
-3. Render the Quarto file to HTML or PDF and link that output from Google Sites.
 
 ---
 
