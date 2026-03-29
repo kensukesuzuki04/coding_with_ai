@@ -1,0 +1,401 @@
+---
+title: "Pre-Course Setup & Quarto Guide"
+subtitle: "ECON206 & ECON10"
+author: "Clark University Economics Department"
+date: today
+format:
+  revealjs:
+    theme: default
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+---
+
+# Welcome!
+
+## Course Information
+
+- **Courses**: ECON206 & ECON10
+- **Goal**: Set up your development environment before class
+- **Focus**: Minimize setup issues during class so we can focus on coding
+
+## What We'll Cover Today
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part 1: Pre-Course Setup
+- GitHub & Copilot
+- VS Code
+- Python
+- Quarto
+- Extensions
+:::
+
+::: {.column width="50%"}
+### Part 2: Quarto Basics
+- Document structure
+- Adding figures
+- Creating tables
+- Writing equations
+- Rendering documents
+:::
+::::
+
+---
+
+# Part 1: Pre-Course Setup
+
+## Step 1: GitHub Account & Copilot {.smaller}
+
+### What to Do:
+
+1. Create a GitHub account at **https://github.com/signup**
+2. Apply for GitHub Student Developer Pack at **https://education.github.com/pack**
+3. Activate GitHub Copilot on your account
+4. Sign in with this account in VS Code when prompted
+
+⏱️ **Important**: Approval may take time, start early!
+
+---
+
+## Step 2: Install Visual Studio Code
+
+Download: **https://code.visualstudio.com/download**
+
+### Installation Tips (Windows):
+
+- Enable "Add to PATH"
+- Enable "Open with Code"
+- Register Code as an editor for supported file types
+
+### Test:
+Open a folder and create a test file to verify it works
+
+---
+
+## Step 3: Install Python
+
+Download: **https://www.python.org/downloads/**
+
+### Key Step:
+**✓ Check "Add Python to PATH"** during installation
+
+### Test it:
+
+:::: {.columns}
+::: {.column width="50%"}
+**Windows (Command Prompt):**
+```bash
+python --version
+# or
+py --version
+```
+:::
+
+::: {.column width="50%"}
+**Mac (Terminal):**
+```bash
+python3 --version
+```
+:::
+::::
+
+---
+
+## Step 3b: Create a Test Python File
+
+1. Create a folder: `Documents/Economics/setup_test/`
+2. Create file `test.py` with:
+
+```python
+print("Python is working")
+```
+
+3. In VS Code terminal, run:
+```bash
+python test.py
+```
+
+**Expected output**: `Python is working`
+
+---
+
+## Step 4: Install Quarto
+
+Download: **https://quarto.org/docs/get-started/**
+
+### Test it:
+
+```bash
+quarto --version
+```
+
+You should see a version number
+
+---
+
+## Step 5: Install PDF Engine for Quarto
+
+### Recommended:
+**TinyTeX through Quarto** (simplest option)
+
+https://quarto.org/docs/output-formats/pdf-engine.html
+
+### Alternatives:
+- TeX Live: https://www.tug.org/texlive/
+- MiKTeX: https://miktex.org/download
+
+---
+
+## Step 5b: Test Quarto PDF Rendering
+
+In your `setup_test` folder, create `test.qmd`:
+
+```markdown
+---
+title: "Quarto PDF Test"
+format: pdf
+---
+
+# Test
+
+If you can read this in a PDF file, 
+Quarto and the PDF engine are working.
+```
+
+Run:
+```bash
+quarto render test.qmd --to pdf
+```
+
+**Expected**: A new file `test.pdf` appears ✓
+
+---
+
+## Step 6: Install VS Code Extensions
+
+Click the **Extensions** icon on the left sidebar and install:
+
+1. **Python** by Microsoft
+2. **Jupyter** by Microsoft  
+3. **Quarto** by Quarto
+
+---
+
+## Step 7: Confirm Everything Works
+
+### Checklist:
+
+- ✓ VS Code opens normally
+- ✓ Python runs in terminal (`python --version`)
+- ✓ Quarto runs in terminal (`quarto --version`)
+- ✓ GitHub account ready for VS Code sign-in
+- ✓ Python extension installed
+- ✓ Jupyter extension installed
+- ✓ Quarto extension installed
+- ✓ `test.py` runs successfully
+- ✓ `test.qmd` renders to PDF
+
+---
+
+## What NOT to Install
+
+- ❌ Project-specific Python packages yet
+- ❌ Virtual environments yet
+- ❌ Additional data science tools yet
+
+**We'll do all of this in class!**
+
+---
+
+# Part 2: Quarto Basics
+
+## What is Quarto?
+
+Quarto is a document publishing system that lets you:
+
+- Write in Markdown
+- Include code and equations
+- Generate HTML, PDF, Word, slides, websites
+- Mix text, figures, tables, and code output
+
+---
+
+## Key Concept: Working Directory
+
+### Simple Rule:
+
+Keep your files organized in one folder:
+
+```
+my_project/
+  ├── draft.qmd
+  ├── figure1.png
+  ├── table1.csv
+  └── data/
+      └── sample.xlsx
+```
+
+**When you run `quarto render draft.qmd`, Quarto looks for files relative to this folder**
+
+---
+
+## General Template
+
+```markdown
+---
+title: "Draft Title"
+author: "Your Name"
+date: today
+format:
+  html: default
+  pdf: default
+---
+
+# Introduction
+
+Write 2-3 sentences about the purpose.
+
+# Content Section
+
+Your content goes here.
+```
+
+---
+
+## How to Add Figures
+
+### Same folder as your .qmd file:
+```markdown
+![My figure caption](my_plot.png)
+```
+
+### In a subfolder:
+```markdown
+![My figure caption](figures/my_plot.png)
+```
+
+⚠️ **Common error**: Wrong file path or typo in filename
+
+---
+
+## How to Make Tables
+
+### Option A: Simple Markdown table
+
+```markdown
+| Item | Amount |
+|---|---:|
+| Apples | 12 |
+| Oranges | 8 |
+```
+
+### Option B: Convert from Excel to CSV {.smaller}
+
+1. Save Excel as CSV
+2. Use an online converter:
+   - TableConvert: https://tableconvert.com/excel-to-markdown
+   - TablesGenerator: https://www.tablesgenerator.com/markdown_tables
+
+---
+
+## How to Include Hyperlinks
+
+### External links:
+```markdown
+[Quarto Documentation](https://quarto.org/docs/)
+```
+
+### Local files:
+```markdown
+[See the setup guide](PRE_COURSE_PREPARATION.md)
+```
+
+---
+
+## How to Write Equations
+
+### Inline equations (with `$...$`):
+
+```markdown
+The demand function is $Q_d = a - bP$.
+```
+
+Renders as: The demand function is $Q_d = a - bP$.
+
+---
+
+## Display Equations
+
+### Block equations (with `$$...$$`):
+
+```markdown
+$$
+GDP = C + I + G + NX
+$$
+```
+
+### More examples:
+
+```markdown
+$\frac{a}{b}$        # Fractions
+
+$\sum_{i=1}^{n}$    # Summation
+
+$\alpha, \beta, \gamma$  # Greek letters
+```
+
+---
+
+## LaTeX Math Resources
+
+- **Overleaf**: https://www.overleaf.com/learn/latex/Mathematical_expressions
+- **Detexify**: https://detexify.kirelabs.org/classify.html (draw a symbol to find its code)
+- **Wikibook**: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+---
+
+## How to Render Your Document
+
+### Basic render (HTML):
+```bash
+quarto render draft.qmd
+```
+
+### Render to PDF:
+```bash
+quarto render draft.qmd --to pdf
+```
+
+### Render to Word:
+```bash
+quarto render draft.qmd --to docx
+```
+
+⚠️ **PDF error?** Check your PDF engine installation
+
+---
+
+# You're Ready! 🎉
+
+## Next Steps:
+
+1. **Before Class**: Complete all installation steps
+2. **Verify**: Run the test files to confirm everything works
+3. **In Class**: We'll build on this foundation together
+
+## Questions?
+
+Feel free to reach out if you encounter any issues during setup!
+
+---
+
+## Additional Resources
+
+- [Quarto Official Documentation](https://quarto.org/docs/)
+- [VS Code Documentation](https://code.visualstudio.com/docs/)
+- [Python Official Documentation](https://www.python.org/doc/)
+- [GitHub Copilot Help](https://github.com/features/copilot)
