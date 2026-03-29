@@ -2,10 +2,9 @@
 
 > **Course Use**
 > This setup guide is prepared for Clark University Economics Department course `ECON206`.
-> It is also intended to serve as a reusable template for future courses, with additional course numbers added as needed.
 >
 > **Document Preparation**
-> This README was drafted with GitHub Copilot and revised according to Professor Suzuki's instructions.
+> This README was prepared with GitHub Copilot under Professor Suzuki's instruction and revision.
 
 This guide is for students to complete **before class**.
 
