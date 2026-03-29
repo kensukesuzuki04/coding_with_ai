@@ -72,16 +72,30 @@ py --version
 
 You should see a Python 3 version number.
 
-You can also test that Python actually runs code:
+To keep your test files organized, first create a folder for setup checks.
+
+Example:
+
+```text
+Documents/ECON206/setup-test/
+```
+
+Inside that folder, create a file named `test.py` with the following content:
+
+```python
+print("Python is working")
+```
+
+Then open a terminal in that folder and run:
 
 ```bash
-python -c "print('Python is working')"
+python test.py
 ```
 
 If `python` does not work on Windows, try:
 
 ```bash
-py -c "print('Python is working')"
+py test.py
 ```
 
 You should see:
@@ -136,7 +150,7 @@ Recommended for students:
 
 How to test Quarto and PDF rendering:
 
-Create a file named `test.qmd` with the following content:
+In the same `setup-test` folder, create a file named `test.qmd` with the following content:
 
 ```markdown
 ---
