@@ -2,6 +2,16 @@
 
 This guide is a quick reference for writing course documents with Quarto.
 
+## Table of Contents
+
+- [0. Working Directory (Read This First)](#0-working-directory-read-this-first)
+- [1. General Template (Copy and Paste)](#1-general-template-copy-and-paste)
+- [2. How to Add Figures](#2-how-to-add-figures)
+- [3. How to Make Tables](#3-how-to-make-tables)
+- [4. How to Include Hyperlinks](#4-how-to-include-hyperlinks)
+- [5. How to Write Equations (LaTeX syntax)](#5-how-to-write-equations-latex-syntax)
+- [6. Render the Document](#6-render-the-document)
+
 ## 0. Working Directory (Read This First)
 
 When you run `quarto render draft.qmd`, Quarto looks for files relative to the folder that contains `draft.qmd`.

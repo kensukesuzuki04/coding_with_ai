@@ -10,6 +10,22 @@ This guide is for students to complete **before class**.
 
 The goal is to make sure everyone arrives with the required software installed so that, during class, we can focus on running the code, installing Python packages, seeing errors, and fixing them.
 
+## Table of Contents
+
+- [What You Need to Install Before Class](#what-you-need-to-install-before-class)
+- [1. Create a GitHub Account and Activate Copilot Student Access](#1-create-a-github-account-and-activate-copilot-student-access)
+- [2. Install Visual Studio Code](#2-install-visual-studio-code)
+- [3. Install Python](#3-install-python)
+- [4. Install Quarto](#4-install-quarto)
+- [5. Install a PDF Engine for Quarto](#5-install-a-pdf-engine-for-quarto)
+- [6. Install VS Code Extensions](#6-install-vs-code-extensions)
+- [7. Confirm Everything Works](#7-confirm-everything-works)
+- [8. What Not to Install Yet](#8-what-not-to-install-yet)
+- [9. What We Will Do in Class](#9-what-we-will-do-in-class)
+- [10. Troubleshooting Before Class](#10-troubleshooting-before-class)
+- [11. Recommended Folder Setup](#11-recommended-folder-setup)
+- [12. Checklist](#12-checklist)
+
 ## What You Need to Install Before Class
 
 Please install the following applications before class:
