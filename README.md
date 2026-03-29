@@ -1,9 +1,11 @@
 # Pre-Class Setup Guide: U.S. State GDP Mapping Project
 
-> This setup guide is currently for Clark University Economics Department `ECON206`.
-> It may also be reused for other courses in the future, with additional course numbers added as needed.
+> **Course Use**
+> This setup guide is prepared for Clark University Economics Department course `ECON206`.
+> It is also intended to serve as a reusable template for future courses, with additional course numbers added as needed.
 >
-> This README was created by GitHub Copilot based on Professor Suzuki's instructions and revisions.
+> **Document Preparation**
+> This README was drafted with GitHub Copilot and revised according to Professor Suzuki's instructions.
 
 This guide is for students to complete **before class**.
 
@@ -70,6 +72,24 @@ py --version
 
 You should see a Python 3 version number.
 
+You can also test that Python actually runs code:
+
+```bash
+python -c "print('Python is working')"
+```
+
+If `python` does not work on Windows, try:
+
+```bash
+py -c "print('Python is working')"
+```
+
+You should see:
+
+```text
+Python is working
+```
+
 ---
 
 ## 3. Install Quarto
@@ -114,11 +134,28 @@ Recommended for students:
 - If you are unsure, install **TinyTeX through Quarto**.
 - This is the simplest option for most students.
 
-How to test later:
+How to test Quarto and PDF rendering:
+
+Create a file named `test.qmd` with the following content:
+
+```markdown
+---
+title: "Quarto PDF Test"
+format: pdf
+---
+
+# Test
+
+If you can read this in a PDF file, Quarto and the PDF engine are working.
+```
+
+Then run:
 
 ```bash
-quarto render draft.qmd --to pdf
+quarto render test.qmd --to pdf
 ```
+
+If everything is installed correctly, Quarto should generate a PDF file in the same folder.
 
 ---
 
@@ -272,15 +309,6 @@ Documents/lecture/econ206/gdp-mapping-project/
 ```
 
 Put all class files there once they are distributed.
-
----
-
-## 12. Submission / Record Options
-
-If you want to publish your work later:
-
-- `README.md` works well in GitHub repositories.
-- `draft.qmd` can be rendered to HTML or PDF using Quarto.
 - Google Sites does **not** natively render Markdown files.
 
 For Google Sites, the best options are:
