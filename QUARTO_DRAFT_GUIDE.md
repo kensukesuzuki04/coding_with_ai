@@ -98,8 +98,14 @@ Common error: wrong path. If the image does not appear, check the file name and 
 1. In Excel, open your sheet.
 2. Save As `CSV (Comma delimited) (*.csv)`.
 3. Use one of these quick methods:
-   - Paste values into a Markdown table generator website and copy the Markdown output.
+  - Paste values into a Markdown table generator website and copy the Markdown output.
    - Use a small Quarto code chunk to read and print the CSV table.
+
+Useful websites:
+
+- TableConvert: https://tableconvert.com/excel-to-markdown
+- TablesGenerator: https://www.tablesgenerator.com/markdown_tables
+- ConvertCSV: https://www.convertcsv.com/csv-to-markdown.htm
 
 Example Quarto chunk (Python):
 
@@ -112,7 +118,28 @@ pd.read_csv("table1.csv")
 
 Note: For this Python chunk, Python and `pandas` must be installed.
 
-## 4. How to Write Equations (LaTeX syntax)
+## 4. How to Include Hyperlinks
+
+Use this Markdown format:
+
+```markdown
+[Link text](https://example.com)
+```
+
+Examples:
+
+```markdown
+[Quarto Documentation](https://quarto.org/docs/)
+[GitHub](https://github.com)
+```
+
+You can also link to files in the same folder:
+
+```markdown
+[See the setup guide](PRE_COURSE_PREPARATION.md)
+```
+
+## 5. How to Write Equations (LaTeX syntax)
 
 Use `$...$` for inline equations:
 
@@ -136,7 +163,13 @@ $\sum_{i=1}^{n} x_i$
 $\alpha, \beta, \gamma$
 ```
 
-## 5. Render the Document
+Useful references for LaTeX math syntax:
+
+- Overleaf Mathematical Expressions: https://www.overleaf.com/learn/latex/Mathematical_expressions
+- Detexify (find symbol commands): https://detexify.kirelabs.org/classify.html
+- LaTeX Wikibook Mathematics: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+## 6. Render the Document
 
 In the VS Code terminal, run:
 
