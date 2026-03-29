@@ -1,7 +1,7 @@
-# Pre-Class Setup Guide: U.S. State GDP Mapping Project
+# Pre-Class Setup Guide for Coding Exercises
 
 > **Course Use**
-> This setup guide is prepared for Clark University Economics Department course `ECON206`.
+> This setup guide is prepared for Clark University Economics Department courses `ECON206` and `ECON10`.
 >
 > **Document Preparation**
 > This README was prepared with GitHub Copilot under Professor Suzuki's instruction and revision.
@@ -120,14 +120,14 @@ To keep your test files organized, first create a folder for setup checks.
 Example:
 
 ```text
-Documents/ECON206/setup_test/
+Documents/Economics/setup_test/
 ```
 
 You can create this folder in File Explorer.
-For example, open your `Documents` folder, create a folder named `ECON206`, and inside it create another folder named `setup_test`.
+For example, open your `Documents` folder, create a folder named `Economics`, and inside it create another folder named `setup_test`.
 
 On a Mac, you can do the same thing in Finder.
-Open your `Documents` folder, create a folder named `ECON206`, and inside it create another folder named `setup_test`.
+Open your `Documents` folder, create a folder named `Economics`, and inside it create another folder named `setup_test`.
 
 Inside that folder, create a file named `test.py` with the following content:
 
@@ -296,17 +296,8 @@ py --version
 
 Please **do not** install the project Python packages before class.
 
-That means you should wait on packages such as:
-
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `geopandas`
-- `mapclassify`
-- `shapely`
-- `pyproj`
-
-We will install these together in class and use any installation problems as part of the learning process.
+The packages we need may differ depending on the class exercise.
+We will install the required packages together in class and use any installation problems as part of the learning process.
 
 ---
 
@@ -319,8 +310,8 @@ In class, we will:
 3. Install required Python packages.
 4. Read error messages.
 5. Troubleshoot installation and environment issues.
-6. Generate maps of U.S. state GDP.
-7. Render a short Quarto draft.
+6. Work through course coding exercises.
+7. Render a short Quarto document.
 
 ---
 
@@ -356,13 +347,13 @@ Before class, create a folder on your computer where you will store the project 
 Example:
 
 ```text
-Documents/ECON206/gdp-mapping-project/
+Documents/Economics/coding_exercises/
 ```
 
 Or, if you prefer organizing by category first:
 
 ```text
-Documents/lecture/econ206/gdp-mapping-project/
+Documents/lecture/economics/coding_exercises/
 ```
 
 Put all class files there once they are distributed.
