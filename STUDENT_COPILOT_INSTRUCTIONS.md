@@ -99,6 +99,37 @@ Return feedback with these sections:
 
 Tip: Use `coauthor` for draft improvement and `reviewer` for stricter checks before submission.
 
+### How to train or customize an agent over time
+
+You can improve agent quality by giving it better context from your own work history.
+
+Useful inputs include:
+
+- A previous assignment submission that you wrote.
+- Instructor feedback comments on that submission.
+- A short note on what you want to improve (for example, argument flow, coding style, or table interpretation).
+
+Example prompt:
+
+```text
+Here is my previous submission and my instructor's comments.
+Please identify repeated weaknesses and create a revision checklist for this new draft.
+Focus on structure, clarity, and evidence.
+```
+
+Best practice:
+
+1. Ask the agent to extract patterns from feedback first.
+2. Ask it to create a checklist you can reuse.
+3. Apply the checklist to your current draft.
+4. Re-run the agent and compare what improved.
+
+Important:
+
+- Use your own prior work and authorized feedback only.
+- Do not ask the agent to copy old content directly into new submissions.
+- Use feedback to improve your process, not to bypass learning.
+
 ## Class Rules for Responsible Use
 
 - You are responsible for all submitted work.
