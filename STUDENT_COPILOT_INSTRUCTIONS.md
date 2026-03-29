@@ -132,8 +132,19 @@ Important:
 
 ## Class Rules for Responsible Use
 
-- You are responsible for all submitted work.
-- Verify all code and outputs before submission.
+> **CRITICAL POLICY (READ CAREFULLY)**
+>
+> **AI is not your replacement. AI is your assistant.**
+>
+> **You are fully responsible for everything you submit.**
+>
+> **Correct content can still receive zero credit if it does not align with class discussion, assignment goals, or course context.**
+>
+> **Accuracy alone is not enough. Relevance to the assignment and course context is required.**
+>
+> **AI does not fully know our class context. Situating the answer in course context is your responsibility.**
+
+- Verify all code, interpretation, and output before submission.
 - Do not submit AI-generated content that you cannot explain.
 - Follow all course policies on collaboration and academic integrity.
 - When required, disclose where Copilot assisted your work.
