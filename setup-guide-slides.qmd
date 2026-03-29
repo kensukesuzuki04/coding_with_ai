@@ -9,7 +9,7 @@ format:
     transition: slide
     background-transition: fade
     slide-number: true
-    chalkboard: 
+    chalkboard:
       buttons: true
     preview-links: auto
 ---
@@ -61,6 +61,42 @@ format:
 
 ---
 
+## Recommended Folder Structure
+
+For this course, create the following folder to get started:
+
+:::: {.columns}
+::: {.column width="45%"}
+**For setup/testing:**
+```
+Documents/
+  └── Economics/
+      └── setup_test/
+          ├── test.py
+          └── test.qmd
+```
+:::
+
+::: {.column width="55%"}
+**For ongoing coursework:**
+```
+Documents/
+  └── Economics/
+      ├── setup_test/
+      ├── econ206/
+      │   └── (your work here)
+      └── econ10/
+          └── (your work here)
+```
+:::
+::::
+
+- You can organize the rest however you like
+- Avoid spaces in folder/file names (use `_` instead)
+- Use a clear hierarchy: General → Subject → Project
+
+---
+
 ## Step 2: Install Visual Studio Code
 
 Download: **https://code.visualstudio.com/download**
@@ -72,7 +108,10 @@ Download: **https://code.visualstudio.com/download**
 - Register Code as an editor for supported file types
 
 ### Test:
-Open a folder and create a test file to verify it works
+1. Open VS Code
+2. Go to **File > Open Folder** and select your `setup_test` folder
+3. Create a new file (e.g., `hello.txt`) and type something
+4. If VS Code opens and the file saves without errors, it's working ✓
 
 ---
 
@@ -85,9 +124,11 @@ Download: **https://www.python.org/downloads/**
 
 ### Test it:
 
+Open the VS Code terminal (**Terminal > New Terminal**) and run:
+
 :::: {.columns}
 ::: {.column width="50%"}
-**Windows (Command Prompt):**
+**Windows:**
 ```bash
 python --version
 # or
@@ -96,12 +137,14 @@ py --version
 :::
 
 ::: {.column width="50%"}
-**Mac (Terminal):**
+**Mac:**
 ```bash
 python3 --version
 ```
 :::
 ::::
+
+**Expected output**: `Python 3.x.x` — if you see this, Python is installed correctly ✓
 
 ---
 
@@ -129,11 +172,15 @@ Download: **https://quarto.org/docs/get-started/**
 
 ### Test it:
 
+Open the VS Code terminal (**Terminal > New Terminal**) and run:
+
 ```bash
 quarto --version
 ```
 
-You should see a version number
+**Expected output**: a version number like `1.x.x` ✓
+
+If you see `command not found`, Quarto was not added to PATH — try restarting VS Code or your computer
 
 ---
 
@@ -162,7 +209,7 @@ format: pdf
 
 # Test
 
-If you can read this in a PDF file, 
+If you can read this in a PDF file,
 Quarto and the PDF engine are working.
 ```
 
@@ -180,7 +227,7 @@ quarto render test.qmd --to pdf
 Click the **Extensions** icon on the left sidebar and install:
 
 1. **Python** by Microsoft
-2. **Jupyter** by Microsoft  
+2. **Jupyter** by Microsoft
 3. **Quarto** by Quarto
 
 ---
@@ -282,9 +329,9 @@ Your content goes here.
 
 ---
 
-## How to Make Tables
+## How to Make Tables: Option A
 
-### Option A: Simple Markdown table
+### Simple Markdown table
 
 ```markdown
 | Item | Amount |
@@ -293,12 +340,24 @@ Your content goes here.
 | Oranges | 8 |
 ```
 
-### Option B: Convert from Excel to CSV {.smaller}
+Renders as:
 
-1. Save Excel as CSV
-2. Use an online converter:
+| Item | Amount |
+|---|---:|
+| Apples | 12 |
+| Oranges | 8 |
+
+---
+
+## How to Make Tables: Option B
+
+### Convert from Excel to CSV
+
+1. Save your Excel file as CSV
+2. Use an online converter to generate Markdown:
    - TableConvert: https://tableconvert.com/excel-to-markdown
    - TablesGenerator: https://www.tablesgenerator.com/markdown_tables
+3. Paste the output into your `.qmd` file
 
 ---
 
