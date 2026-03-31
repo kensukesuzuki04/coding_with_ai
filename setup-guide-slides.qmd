@@ -105,6 +105,22 @@ Go to **Settings → Billing and licensing → Payment information** and click *
 
 ---
 
+## Apply for the GitHub Student Developer Pack
+
+Go to **https://education.github.com/pack** and apply.
+
+### What you get (free for students):
+- **GitHub Copilot Pro** — AI coding assistant inside VS Code
+- Access to other developer tools and credits
+
+### What GitHub needs from you:
+- A verified student email or proof of enrollment
+- Your location (apply **on campus** for fastest approval)
+
+> **Tip:** Apply while connected to the Clark University network — approvals are much faster.
+
+---
+
 ## Step 1d: Get Enrollment Verification
 
 Log in to **https://cuweb.clarku.edu**. Under **Student Records and Registration**, click **Enrollment Verification**.
