@@ -8,8 +8,9 @@ This repository contains setup and writing guides for Clark University Economics
 
 ## Start Here
 
-1. [Pre-Course Preparation](PRE_COURSE_PREPARATION.md)
-2. [Quarto Draft Guide](QUARTO_DRAFT_GUIDE.md)
-3. [Student Copilot Instructions](STUDENT_COPILOT_INSTRUCTIONS.md)
+1. [GitHub Student Developer Pack and Copilot Access](GITHUB_STUDENT_PERK.md) — do this first; approval can take a few days
+2. [Pre-Course Preparation](PRE_COURSE_PREPARATION.md)
+3. [Quarto Draft Guide](QUARTO_DRAFT_GUIDE.md)
+4. [Student Copilot Instructions](STUDENT_COPILOT_INSTRUCTIONS.md)
 
 These documents were prepared with GitHub Copilot under Professor Suzuki's instruction and revision.

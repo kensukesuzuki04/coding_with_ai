@@ -13,7 +13,7 @@ The goal is to make sure everyone arrives with the required software installed s
 ## Table of Contents
 
 - [What You Need to Install Before Class](#what-you-need-to-install-before-class)
-- [1. Create a GitHub Account and Activate Copilot Student Access](#1-create-a-github-account-and-activate-copilot-student-access)
+- [1. Create a GitHub Account and Activate Copilot Student Access](GITHUB_STUDENT_PERK.md)
 - [2. Install Visual Studio Code](#2-install-visual-studio-code)
 - [3. Install Python](#3-install-python)
 - [4. Install Quarto](#4-install-quarto)
@@ -41,31 +41,11 @@ Do **not** install project-specific Python packages yet. We will do that in clas
 
 ## 1. Create a GitHub Account and Activate Copilot Student Access
 
-Please complete this step first.
-Approval for student access may take time, so it is better to begin early.
+**Please complete this step first — approval may take a few days.**
 
-Before class, create a GitHub account if you do not already have one.
+See the dedicated guide for step-by-step instructions, including how to verify your student status:
 
-Sign up:
-
-- https://github.com/signup
-
-If you are eligible for GitHub Student Developer Pack benefits, apply here:
-
-- https://education.github.com/pack
-
-After your student benefits are approved, activate GitHub Copilot through your GitHub account.
-
-Copilot information:
-
-- https://github.com/features/copilot
-
-What to do:
-
-1. Create or sign in to your GitHub account.
-2. Apply for the GitHub Student Developer Pack if you are eligible.
-3. Confirm that GitHub Copilot is available on your account.
-4. In VS Code, sign in with that GitHub account when prompted.
+- [GitHub Student Developer Pack and Copilot Access](GITHUB_STUDENT_PERK.md)
 
 ---
 
