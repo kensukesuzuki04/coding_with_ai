@@ -84,6 +84,8 @@ What to do:
    - Open with Code
    - Register Code as an editor for supported file types
 
+![VS Code installer options on Windows — check "Add to PATH" and "Open with Code"](https://education.launchcode.org/lchs/_images/win-vscode-install.png)
+
 After installation, open VS Code once to make sure it starts normally.
 
 ---
@@ -99,6 +101,9 @@ What to do:
 1. Download the latest stable Python 3 version.
 2. Run the installer.
 3. On Windows, **check the box that says `Add Python to PATH`** before clicking Install.
+
+![Python installer — make sure to check "Add Python to PATH" before clicking Install](https://docs.python.org/3/_images/win_installer.png)
+
 4. Finish the installation.
 
 How to test:
@@ -131,6 +136,8 @@ py --version
 
 You should see a Python 3 version number.
 
+![Command Prompt showing a successful `python --version` output](https://media.geeksforgeeks.org/wp-content/uploads/20200726144343/Untitleddesign3-660x386.png)
+
 To keep your test files organized, first create a folder for setup checks.
 
 Example:
@@ -158,6 +165,8 @@ The easiest way to run this test is in VS Code:
 3. Open your `setup_test` folder.
 4. In the top menu, click `Terminal` > `New Terminal`.
 5. A terminal will open at the bottom of the VS Code window.
+
+![VS Code with the terminal panel open at the bottom — the "TERMINAL" tab is highlighted in the panel](https://code.visualstudio.com/assets/docs/terminal/getting-started/open-terminal.png)
 
 Then run:
 
@@ -228,6 +237,26 @@ Recommended for students:
 
 - If you are unsure, install **TinyTeX through Quarto**.
 - This is the simplest option for most students.
+
+How to install TinyTeX:
+
+Open a terminal (Command Prompt on Windows, Terminal on Mac) and run:
+
+```bash
+quarto install tinytex
+```
+
+What this command does, step by step:
+
+- `quarto` — calls the Quarto program you installed in Step 4.
+- `install` — tells Quarto to download and install something.
+- `tinytex` — the name of the PDF engine to install. TinyTeX is a lightweight version of LaTeX, which is the system Quarto uses to create PDF files.
+
+Quarto will download TinyTeX automatically and install it for you. You do not need to visit any other website.
+
+When the installation finishes, you should see a message saying installation was successful.
+
+> **Note:** The download may take a few minutes depending on your internet connection. This is normal.
 
 How to test Quarto and PDF rendering:
 
