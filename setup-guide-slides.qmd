@@ -150,7 +150,33 @@ Make sure your **Spring 2026 courses are listed** before uploading.
 
 ![Confirm Spring 2026 courses appear on your transcript](images/github_studentperk/slide_11.png){width=70%}
 
-Upload this PDF to GitHub when asked for proof of enrollment.
+### Important: GitHub only accepts **image files**, not PDFs.
+
+---
+
+## Step 1d: Prepare Your Transcript Image
+
+Your image must show your **name** and **Spring 2026 enrollment**.
+
+![GitHub requires an image file showing your name and current enrollment status](images/github_studentperk/slide_12.png){width=70%}
+
+---
+
+## Step 1d: Screenshot Option 1
+
+Zoom out in your PDF viewer to display all transcript pages together, then take a screenshot.
+
+![Option 1 — zoom out to show all pages at once and take a screenshot](images/github_studentperk/slide_13.png){width=70%}
+
+---
+
+## Step 1d: Screenshot Option 2
+
+Take separate screenshots of each page, place them side-by-side in PowerPoint or Word, then take a screenshot of the combined view.
+
+![Option 2 — arrange screenshots side-by-side in PPT or Word, then screenshot the whole thing](images/github_studentperk/slide_14.png){width=70%}
+
+Upload this image when GitHub asks for proof of enrollment.
 
 ---
 
