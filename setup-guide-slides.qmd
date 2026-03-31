@@ -283,16 +283,22 @@ Run this in your terminal:
 quarto install tinytex
 ```
 
-| Part | What it does |
-|---|---|
-| `quarto` | Calls the Quarto program |
-| `install` | Downloads and installs something |
-| `tinytex` | Lightweight LaTeX engine for PDF output |
-
-> Quarto handles the download automatically. May take a few minutes.
+> Quarto handles the download automatically. This may take a few minutes — that is normal.
 
 ### Alternatives (if TinyTeX fails):
 TeX Live · MiKTeX
+
+---
+
+## Step 5: What Does That Command Mean?
+
+| Part | What it does |
+|---|---|
+| `quarto` | Calls the Quarto program you installed in Step 4 |
+| `install` | Tells Quarto to download and install something |
+| `tinytex` | A lightweight LaTeX engine — needed to create PDF files |
+
+You do not need to visit any other website. Quarto installs TinyTeX for you automatically.
 
 ---
 
