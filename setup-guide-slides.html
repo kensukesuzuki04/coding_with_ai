@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.27">
 
   <meta name="author" content="Professor Ken Suzuki">
-  <meta name="dcterms.date" content="2026-03-29">
+  <meta name="dcterms.date" content="2026-03-30">
   <title>Pre-Course Setup &amp; Quarto Guide</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -210,7 +210,7 @@ Professor Ken Suzuki
 </div>
 </div>
 
-  <p class="date">2026-03-29</p>
+  <p class="date">2026-03-30</p>
 </section>
 <section>
 <section id="welcome" class="title-slide slide level1 center">
@@ -297,12 +297,22 @@ Professor Ken Suzuki
 <section id="step-2-install-visual-studio-code" class="slide level2">
 <h2>Step 2: Install Visual Studio Code</h2>
 <p>Download: <strong>https://code.visualstudio.com/download</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <h3 id="installation-tips-windows">Installation Tips (Windows):</h3>
 <ul>
-<li>Enable “Add to PATH”</li>
+<li>Enable <strong>“Add to PATH”</strong></li>
 <li>Enable “Open with Code”</li>
 <li>Register Code as an editor for supported file types</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://education.launchcode.org/lchs/_images/win-vscode-install.png" style="width:100.0%"></p>
+<figcaption>“Select Additional Tasks” — make sure “Add to PATH” is checked</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="step-2-test-vs-code" class="slide level2">
 <h2>Step 2: Test VS Code</h2>
@@ -316,36 +326,66 @@ Professor Ken Suzuki
 <section id="step-3-install-python" class="slide level2">
 <h2>Step 3: Install Python</h2>
 <p>Download: <strong>https://www.python.org/downloads/</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <h3 id="key-step">Key Step:</h3>
 <p><strong>✓ Check “Add Python to PATH”</strong> during installation</p>
+<ul>
+<li><strong>Windows</strong>: click <em>“Or get the standalone installer for Python 3.14.3”</em> (.exe)</li>
+<li><strong>Mac</strong>: click <em>“Download Python 3.14.3”</em> (.pkg) — PATH is set automatically</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://docs.python.org/3/_images/win_installer.png" style="width:100.0%"></p>
+<figcaption>Check “Add Python 3.14 to PATH” at the bottom before clicking Install Now</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="step-3-test-python" class="slide level2">
 <h2>Step 3: Test Python</h2>
 <p>Open the VS Code terminal (<strong>Terminal &gt; New Terminal</strong>) and run:</p>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:55%;">
 <p><strong>Windows:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="ex">python</span> <span class="at">--version</span></span>
 <span id="cb3-2"><a href=""></a><span class="co"># or</span></span>
 <span id="cb3-3"><a href=""></a><span class="ex">py</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div><div class="column" style="width:50%;">
 <p><strong>Mac:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="ex">python3</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Expected</strong>: <code>Python 3.14.3</code> ✓</p>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://media.geeksforgeeks.org/wp-content/uploads/20200726144343/Untitleddesign3-660x386.png" style="width:100.0%"></p>
+<figcaption>Command Prompt showing Python version after a successful install</figcaption>
+</figure>
+</div>
 </div></div>
-<p><strong>Expected output</strong>: <code>Python 3.x.x</code> — if you see this, Python is installed correctly ✓</p>
 </section>
-<section id="step-3b-create-a-test-python-file" class="slide level2">
-<h2>Step 3b: Create a Test Python File</h2>
+<section id="step-3b-run-python-in-vs-code" class="slide level2">
+<h2>Step 3b: Run Python in VS Code</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
 <ol type="1">
-<li>Create a folder: <code>Documents/Economics/setup_test/</code></li>
-<li>Create file <code>test.py</code> with:</li>
+<li>In VS Code: <strong>Terminal &gt; New Terminal</strong></li>
+<li>Create <code>test.py</code>:</li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="bu">print</span>(<span class="st">"Python is working"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="3" type="1">
-<li>In VS Code terminal, run:</li>
+<li>Run:</li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="ex">python</span> test.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Expected output</strong>: <code>Python is working</code></p>
+<p><strong>Expected</strong>: <code>Python is working</code> ✓</p>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://code.visualstudio.com/assets/docs/terminal/getting-started/open-terminal.png" style="width:100.0%"></p>
+<figcaption>VS Code terminal panel — opens at the bottom of the window</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="step-4-install-quarto" class="slide level2">
 <h2>Step 4: Install Quarto</h2>

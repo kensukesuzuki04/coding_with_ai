@@ -84,7 +84,7 @@ What to do:
    - Open with Code
    - Register Code as an editor for supported file types
 
-![VS Code installer options on Windows — check "Add to PATH" and "Open with Code"](https://education.launchcode.org/lchs/_images/win-vscode-install.png)
+![VS Code installer — "Select Additional Tasks" screen. Make sure "Add to PATH (requires shell restart)" is checked.](https://education.launchcode.org/lchs/_images/win-vscode-install.png)
 
 After installation, open VS Code once to make sure it starts normally.
 
@@ -98,13 +98,26 @@ Download:
 
 What to do:
 
-1. Download the latest stable Python 3 version.
-2. Run the installer.
-3. On Windows, **check the box that says `Add Python to PATH`** before clicking Install.
+**On Windows:**
 
-![Python installer — make sure to check "Add Python to PATH" before clicking Install](https://docs.python.org/3/_images/win_installer.png)
+1. Go to https://www.python.org/downloads/
+2. Click **"Or get the standalone installer for Python 3.14.3"** — this downloads a `.exe` file.
+3. Run the installer.
+4. **Check the box that says `Add Python to PATH`** before clicking Install.
 
-4. Finish the installation.
+![Python download page — click "Or get the standalone installer for Python 3.14.3" to download the .exe file](images/download_python.png)
+
+![Python installer — check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*7nOyowsPsGI19pZT.png)
+
+5. Finish the installation.
+
+**On Mac:**
+
+1. Go to https://www.python.org/downloads/
+2. Click **"Download Python 3.14.3"** — this downloads a `.pkg` file.
+3. Open the `.pkg` file and follow the installer steps.
+4. No PATH checkbox is needed on Mac — the installer handles it automatically.
+5. Finish the installation.
 
 How to test:
 
@@ -136,7 +149,7 @@ py --version
 
 You should see a Python 3 version number.
 
-![Command Prompt showing a successful `python --version` output](https://media.geeksforgeeks.org/wp-content/uploads/20200726144343/Untitleddesign3-660x386.png)
+![Command Prompt showing a successful `python --version` output](images/cmd_python.png)
 
 To keep your test files organized, first create a folder for setup checks.
 
@@ -166,7 +179,7 @@ The easiest way to run this test is in VS Code:
 4. In the top menu, click `Terminal` > `New Terminal`.
 5. A terminal will open at the bottom of the VS Code window.
 
-![VS Code with the terminal panel open at the bottom — the "TERMINAL" tab is highlighted in the panel](https://code.visualstudio.com/assets/docs/terminal/getting-started/open-terminal.png)
+![VS Code terminal panel — click "Terminal" > "New Terminal" to open it at the bottom of the window](https://code.visualstudio.com/assets/docs/terminal/getting-started/open-terminal.png)
 
 Then run:
 

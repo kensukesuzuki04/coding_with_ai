@@ -101,11 +101,19 @@ Documents/
 
 Download: **https://code.visualstudio.com/download**
 
+:::: {.columns}
+::: {.column width="50%"}
 ### Installation Tips (Windows):
 
-- Enable "Add to PATH"
+- Enable **"Add to PATH"**
 - Enable "Open with Code"
 - Register Code as an editor for supported file types
+:::
+
+::: {.column width="50%"}
+!["Select Additional Tasks" — make sure "Add to PATH" is checked](https://education.launchcode.org/lchs/_images/win-vscode-install.png){width=100%}
+:::
+::::
 
 ---
 
@@ -122,8 +130,19 @@ Download: **https://code.visualstudio.com/download**
 
 Download: **https://www.python.org/downloads/**
 
+:::: {.columns}
+::: {.column width="50%"}
 ### Key Step:
 **✓ Check "Add Python to PATH"** during installation
+
+- **Windows**: click *"Or get the standalone installer for Python 3.14.3"* (.exe)
+- **Mac**: click *"Download Python 3.14.3"* (.pkg) — PATH is set automatically
+:::
+
+::: {.column width="50%"}
+![Check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](https://docs.python.org/3/_images/win_installer.png){width=100%}
+:::
+::::
 
 ---
 
@@ -132,42 +151,49 @@ Download: **https://www.python.org/downloads/**
 Open the VS Code terminal (**Terminal > New Terminal**) and run:
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="55%"}
 **Windows:**
 ```bash
 python --version
 # or
 py --version
 ```
-:::
-
-::: {.column width="50%"}
 **Mac:**
 ```bash
 python3 --version
 ```
+**Expected**: `Python 3.14.3` ✓
+:::
+
+::: {.column width="45%"}
+![Command Prompt showing Python version after a successful install](https://media.geeksforgeeks.org/wp-content/uploads/20200726144343/Untitleddesign3-660x386.png){width=100%}
 :::
 ::::
 
-**Expected output**: `Python 3.x.x` — if you see this, Python is installed correctly ✓
-
 ---
 
-## Step 3b: Create a Test Python File
+## Step 3b: Run Python in VS Code
 
-1. Create a folder: `Documents/Economics/setup_test/`
-2. Create file `test.py` with:
+:::: {.columns}
+::: {.column width="55%"}
+1. In VS Code: **Terminal > New Terminal**
+2. Create `test.py`:
 
 ```python
 print("Python is working")
 ```
 
-3. In VS Code terminal, run:
+3. Run:
 ```bash
 python test.py
 ```
+**Expected**: `Python is working` ✓
+:::
 
-**Expected output**: `Python is working`
+::: {.column width="45%"}
+![VS Code terminal panel — opens at the bottom of the window](https://code.visualstudio.com/assets/docs/terminal/getting-started/open-terminal.png){width=100%}
+:::
+::::
 
 ---
 
