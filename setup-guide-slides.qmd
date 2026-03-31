@@ -59,6 +59,8 @@ Full step-by-step guide: [GITHUB_STUDENT_PERK.md](GITHUB_STUDENT_PERK.md)
 3. Fill in Billing Information (no payment required)
 4. Upload your Enrollment Verification certificate as proof of enrollment
 
+> **Tip:** Apply **on campus** (or close to campus) — GitHub uses your location for verification and approvals are faster from the Clark network.
+
 ---
 
 ## Step 1a: Create a GitHub Account
@@ -117,7 +119,11 @@ CUWeb displays your **Current Enrollment Verification Certificate**. Take a scre
 
 ![Current Enrollment Verification Certificate — take a screenshot to upload](images/github_studentperk/slide_08.png){width=70%}
 
+> **Students who used Enrollment Verification reported immediate approval!**
+
 ---
+
+# Software Installation
 
 ## Recommended Folder Structure
 
@@ -384,6 +390,8 @@ quarto render test.qmd --to pdf
 **Expected**: A new file `test.pdf` appears ✓
 
 ---
+
+# Verify & Finalize
 
 ## Step 6: Install VS Code Extensions
 

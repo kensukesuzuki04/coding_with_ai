@@ -52,6 +52,8 @@ Scroll down to **Two-factor authentication** and enable it. You can use the same
 
 Go to **https://education.github.com/pack** and apply for the Student Developer Pack.
 
+> **Tip: Apply on campus (or from somewhere close to campus).** GitHub uses your location as part of the verification process. Applying while connected to the Clark University network can speed up approval significantly.
+
 During the application, GitHub will ask you to fill in **Billing Information**. This does **not** require a credit card or any payment. Go to **Settings → Billing and licensing → Payment information** and click **Edit** next to Billing information.
 
 ![GitHub Billing — click Edit on Billing information (no payment required)](images/github_studentperk/slide_06.png)
@@ -71,6 +73,8 @@ Log in to CUWeb at **https://cuweb.clarku.edu**. Under **Student Records and Reg
 ### 4b. Take a Screenshot
 
 CUWeb will display your **Current Enrollment Verification Certificate**. Take a screenshot of this page and upload the image when GitHub asks for proof of enrollment.
+
+> **Note:** Students who used the Enrollment Verification certificate reported **immediate approval**. This is the recommended method.
 
 ![Current Enrollment Verification Certificate — take a screenshot to upload to GitHub](images/github_studentperk/slide_08.png)
 
