@@ -351,7 +351,7 @@ Professor Ken Suzuki
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*7nOyowsPsGI19pZT.png" style="width:100.0%"></p>
+<p><img data-src="images/installation_python.png" style="width:100.0%"></p>
 <figcaption>Check “Add Python 3.14 to PATH” at the bottom before clicking Install Now</figcaption>
 </figure>
 </div>
@@ -401,40 +401,80 @@ Professor Ken Suzuki
 </div>
 </div></div>
 </section>
-<section id="step-4-install-quarto" class="slide level2">
-<h2>Step 4: Install Quarto</h2>
-<p>Download: <strong>https://quarto.org/docs/get-started/</strong></p>
-<h3 id="test-it">Test it:</h3>
+<section id="step-4-install-quarto-download" class="slide level2">
+<h2>Step 4: Install Quarto — Download</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Go to <strong>https://quarto.org/docs/get-started/</strong></p>
+<ul>
+<li>Use the <strong>current release v1.9.36</strong> (not the pre-release)</li>
+<li><strong>Windows</strong>: download the <code>.msi</code> file</li>
+<li><strong>Mac</strong>: download the <code>.pkg</code> file</li>
+</ul>
+<p>Run the installer and finish installation.</p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/download_qualto.png" style="width:100.0%" alt="Quarto download page"></p>
+<figcaption>Quarto download page — use the current release v1.9.36</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="step-4-test-quarto" class="slide level2">
+<h2>Step 4: Test Quarto</h2>
 <p>Open the VS Code terminal (<strong>Terminal &gt; New Terminal</strong>) and run:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href=""></a><span class="ex">quarto</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Expected output</strong>: a version number like <code>1.x.x</code> ✓</p>
-<p>If you see <code>command not found</code>, Quarto was not added to PATH — try restarting VS Code or your computer</p>
+<p><strong>Expected output</strong>: <code>1.9.36</code> ✓</p>
+<p>If you see <code>command not found</code>, try restarting VS Code or your computer.</p>
 </section>
 <section id="step-5-install-pdf-engine-for-quarto" class="slide level2">
 <h2>Step 5: Install PDF Engine for Quarto</h2>
-<h3 id="recommended">Recommended:</h3>
-<p><strong>TinyTeX through Quarto</strong> (simplest option)</p>
-<p>https://quarto.org/docs/output-formats/pdf-engine.html</p>
-<h3 id="alternatives">Alternatives:</h3>
-<ul>
-<li>TeX Live: https://www.tug.org/texlive/</li>
-<li>MiKTeX: https://miktex.org/download</li>
-</ul>
+<h3 id="recommended-tinytex-simplest-option">Recommended: TinyTeX (simplest option)</h3>
+<p>Run this in your terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href=""></a><span class="ex">quarto</span> install tinytex</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>quarto</code></td>
+<td>Calls the Quarto program</td>
+</tr>
+<tr class="even">
+<td><code>install</code></td>
+<td>Downloads and installs something</td>
+</tr>
+<tr class="odd">
+<td><code>tinytex</code></td>
+<td>Lightweight LaTeX engine for PDF output</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Quarto handles the download automatically. May take a few minutes.</p>
+</blockquote>
+<h3 id="alternatives-if-tinytex-fails">Alternatives (if TinyTeX fails):</h3>
+<p>TeX Live · MiKTeX</p>
 </section>
 <section id="step-5b-test-quarto-pdf-rendering" class="slide level2">
 <h2>Step 5b: Test Quarto PDF Rendering</h2>
 <p>In your <code>setup_test</code> folder, create <code>test.qmd</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href=""></a><span class="co">---</span></span>
-<span id="cb8-2"><a href=""></a><span class="an">title:</span><span class="co"> "Quarto PDF Test"</span></span>
-<span id="cb8-3"><a href=""></a><span class="an">format:</span><span class="co"> pdf</span></span>
-<span id="cb8-4"><a href=""></a><span class="co">---</span></span>
-<span id="cb8-5"><a href=""></a></span>
-<span id="cb8-6"><a href=""></a><span class="fu"># Test</span></span>
-<span id="cb8-7"><a href=""></a></span>
-<span id="cb8-8"><a href=""></a>If you can read this in a PDF file,</span>
-<span id="cb8-9"><a href=""></a>Quarto and the PDF engine are working.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href=""></a><span class="co">---</span></span>
+<span id="cb9-2"><a href=""></a><span class="an">title:</span><span class="co"> "Quarto PDF Test"</span></span>
+<span id="cb9-3"><a href=""></a><span class="an">format:</span><span class="co"> pdf</span></span>
+<span id="cb9-4"><a href=""></a><span class="co">---</span></span>
+<span id="cb9-5"><a href=""></a></span>
+<span id="cb9-6"><a href=""></a><span class="fu"># Test</span></span>
+<span id="cb9-7"><a href=""></a></span>
+<span id="cb9-8"><a href=""></a>If you can read this in a PDF file,</span>
+<span id="cb9-9"><a href=""></a>Quarto and the PDF engine are working.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href=""></a><span class="ex">quarto</span> render test.qmd <span class="at">--to</span> pdf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href=""></a><span class="ex">quarto</span> render test.qmd <span class="at">--to</span> pdf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Expected</strong>: A new file <code>test.pdf</code> appears ✓</p>
 </section>
 <section id="step-6-install-vs-code-extensions" class="slide level2">
@@ -509,38 +549,38 @@ Professor Ken Suzuki
 </section>
 <section id="general-template" class="slide level2">
 <h2>General Template</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href=""></a><span class="co">---</span></span>
-<span id="cb11-2"><a href=""></a><span class="an">title:</span><span class="co"> "Draft Title"</span></span>
-<span id="cb11-3"><a href=""></a><span class="an">author:</span><span class="co"> "Your Name"</span></span>
-<span id="cb11-4"><a href=""></a><span class="an">date:</span><span class="co"> today</span></span>
-<span id="cb11-5"><a href=""></a><span class="an">format:</span></span>
-<span id="cb11-6"><a href=""></a><span class="co">  html: default</span></span>
-<span id="cb11-7"><a href=""></a><span class="co">  pdf: default</span></span>
-<span id="cb11-8"><a href=""></a><span class="co">---</span></span>
-<span id="cb11-9"><a href=""></a></span>
-<span id="cb11-10"><a href=""></a><span class="fu"># Introduction</span></span>
-<span id="cb11-11"><a href=""></a></span>
-<span id="cb11-12"><a href=""></a>Write 2-3 sentences about the purpose.</span>
-<span id="cb11-13"><a href=""></a></span>
-<span id="cb11-14"><a href=""></a><span class="fu"># Content Section</span></span>
-<span id="cb11-15"><a href=""></a></span>
-<span id="cb11-16"><a href=""></a>Your content goes here.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href=""></a><span class="co">---</span></span>
+<span id="cb12-2"><a href=""></a><span class="an">title:</span><span class="co"> "Draft Title"</span></span>
+<span id="cb12-3"><a href=""></a><span class="an">author:</span><span class="co"> "Your Name"</span></span>
+<span id="cb12-4"><a href=""></a><span class="an">date:</span><span class="co"> today</span></span>
+<span id="cb12-5"><a href=""></a><span class="an">format:</span></span>
+<span id="cb12-6"><a href=""></a><span class="co">  html: default</span></span>
+<span id="cb12-7"><a href=""></a><span class="co">  pdf: default</span></span>
+<span id="cb12-8"><a href=""></a><span class="co">---</span></span>
+<span id="cb12-9"><a href=""></a></span>
+<span id="cb12-10"><a href=""></a><span class="fu"># Introduction</span></span>
+<span id="cb12-11"><a href=""></a></span>
+<span id="cb12-12"><a href=""></a>Write 2-3 sentences about the purpose.</span>
+<span id="cb12-13"><a href=""></a></span>
+<span id="cb12-14"><a href=""></a><span class="fu"># Content Section</span></span>
+<span id="cb12-15"><a href=""></a></span>
+<span id="cb12-16"><a href=""></a>Your content goes here.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="how-to-add-figures" class="slide level2">
 <h2>How to Add Figures</h2>
 <h3 id="same-folder-as-your-.qmd-file">Same folder as your .qmd file:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href=""></a><span class="al">![My figure caption](my_plot.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href=""></a><span class="al">![My figure caption](my_plot.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="in-a-subfolder">In a subfolder:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href=""></a><span class="al">![My figure caption](figures/my_plot.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href=""></a><span class="al">![My figure caption](figures/my_plot.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>⚠️ <strong>Common error</strong>: Wrong file path or typo in filename</p>
 </section>
 <section id="how-to-make-tables-option-a" class="slide level2">
 <h2>How to Make Tables: Option A</h2>
 <h3 id="simple-markdown-table">Simple Markdown table</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href=""></a><span class="pp">|</span> Item <span class="pp">|</span> Amount <span class="pp">|</span></span>
-<span id="cb14-2"><a href=""></a><span class="pp">|---|---:|</span></span>
-<span id="cb14-3"><a href=""></a><span class="pp">|</span> Apples <span class="pp">|</span> 12 <span class="pp">|</span></span>
-<span id="cb14-4"><a href=""></a><span class="pp">|</span> Oranges <span class="pp">|</span> 8 <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href=""></a><span class="pp">|</span> Item <span class="pp">|</span> Amount <span class="pp">|</span></span>
+<span id="cb15-2"><a href=""></a><span class="pp">|---|---:|</span></span>
+<span id="cb15-3"><a href=""></a><span class="pp">|</span> Apples <span class="pp">|</span> 12 <span class="pp">|</span></span>
+<span id="cb15-4"><a href=""></a><span class="pp">|</span> Oranges <span class="pp">|</span> 8 <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Renders as:</p>
 <table class="caption-top">
 <thead>
@@ -577,28 +617,28 @@ Professor Ken Suzuki
 <section id="how-to-include-hyperlinks" class="slide level2">
 <h2>How to Include Hyperlinks</h2>
 <h3 id="external-links">External links:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href=""></a><span class="co">[</span><span class="ot">Quarto Documentation</span><span class="co">](https://quarto.org/docs/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href=""></a><span class="co">[</span><span class="ot">Quarto Documentation</span><span class="co">](https://quarto.org/docs/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="local-files">Local files:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href=""></a><span class="co">[</span><span class="ot">See the setup guide</span><span class="co">](PRE_COURSE_PREPARATION.md)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href=""></a><span class="co">[</span><span class="ot">See the setup guide</span><span class="co">](PRE_COURSE_PREPARATION.md)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="how-to-write-equations" class="slide level2">
 <h2>How to Write Equations</h2>
 <h3 id="inline-equations-with-...">Inline equations (with <code>$...$</code>):</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href=""></a>The demand function is $Q_d = a - bP$.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href=""></a>The demand function is $Q_d = a - bP$.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Renders as: The demand function is <span class="math inline">\(Q_d = a - bP\)</span>.</p>
 </section>
 <section id="display-equations" class="slide level2">
 <h2>Display Equations</h2>
 <h3 id="block-equations-with-...">Block equations (with <code>$$...$$</code>):</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href=""></a>$$</span>
-<span id="cb18-2"><a href=""></a>GDP = C + I + G + NX</span>
-<span id="cb18-3"><a href=""></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href=""></a>$$</span>
+<span id="cb19-2"><a href=""></a>GDP = C + I + G + NX</span>
+<span id="cb19-3"><a href=""></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="more-examples">More examples:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href=""></a>$\frac{a}{b}$        # Fractions</span>
-<span id="cb19-2"><a href=""></a></span>
-<span id="cb19-3"><a href=""></a>$\sum_{i=1}^{n}$    # Summation</span>
-<span id="cb19-4"><a href=""></a></span>
-<span id="cb19-5"><a href=""></a>$\alpha, \beta, \gamma$  # Greek letters</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href=""></a>$\frac{a}{b}$        # Fractions</span>
+<span id="cb20-2"><a href=""></a></span>
+<span id="cb20-3"><a href=""></a>$\sum_{i=1}^{n}$    # Summation</span>
+<span id="cb20-4"><a href=""></a></span>
+<span id="cb20-5"><a href=""></a>$\alpha, \beta, \gamma$  # Greek letters</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="latex-math-resources" class="slide level2">
 <h2>LaTeX Math Resources</h2>
@@ -611,11 +651,11 @@ Professor Ken Suzuki
 <section id="how-to-render-your-document" class="slide level2">
 <h2>How to Render Your Document</h2>
 <h3 id="basic-render-html">Basic render (HTML):</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href=""></a><span class="ex">quarto</span> render draft.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href=""></a><span class="ex">quarto</span> render draft.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="render-to-pdf">Render to PDF:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href=""></a><span class="ex">quarto</span> render draft.qmd <span class="at">--to</span> pdf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href=""></a><span class="ex">quarto</span> render draft.qmd <span class="at">--to</span> pdf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="render-to-word">Render to Word:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href=""></a><span class="ex">quarto</span> render draft.qmd <span class="at">--to</span> docx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href=""></a><span class="ex">quarto</span> render draft.qmd <span class="at">--to</span> docx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>⚠️ <strong>PDF error?</strong> Check your PDF engine installation</p>
 </section>
 <section class="slide level2">

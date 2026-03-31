@@ -154,7 +154,7 @@ On Mac, the installer sets PATH automatically — no checkbox needed.
 :::
 
 ::: {.column width="50%"}
-![Check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*7nOyowsPsGI19pZT.png){width=100%}
+![Check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](images/installation_python.png){width=100%}
 :::
 ::::
 
@@ -211,11 +211,27 @@ python test.py
 
 ---
 
-## Step 4: Install Quarto
+## Step 4: Install Quarto — Download
 
-Download: **https://quarto.org/docs/get-started/**
+:::: {.columns}
+::: {.column width="50%"}
+Go to **https://quarto.org/docs/get-started/**
 
-### Test it:
+- Use the **current release v1.9.36** (not the pre-release)
+- **Windows**: download the `.msi` file
+- **Mac**: download the `.pkg` file
+
+Run the installer and finish installation.
+:::
+
+::: {.column width="50%"}
+![Quarto download page — use the current release v1.9.36](images/download_qualto.png){width=100%  fig-alt="Quarto download page"}
+:::
+::::
+
+---
+
+## Step 4: Test Quarto
 
 Open the VS Code terminal (**Terminal > New Terminal**) and run:
 
@@ -223,22 +239,32 @@ Open the VS Code terminal (**Terminal > New Terminal**) and run:
 quarto --version
 ```
 
-**Expected output**: a version number like `1.x.x` ✓
+**Expected output**: `1.9.36` ✓
 
-If you see `command not found`, Quarto was not added to PATH — try restarting VS Code or your computer
+If you see `command not found`, try restarting VS Code or your computer.
 
 ---
 
 ## Step 5: Install PDF Engine for Quarto
 
-### Recommended:
-**TinyTeX through Quarto** (simplest option)
+### Recommended: TinyTeX (simplest option)
 
-https://quarto.org/docs/output-formats/pdf-engine.html
+Run this in your terminal:
 
-### Alternatives:
-- TeX Live: https://www.tug.org/texlive/
-- MiKTeX: https://miktex.org/download
+```bash
+quarto install tinytex
+```
+
+| Part | What it does |
+|---|---|
+| `quarto` | Calls the Quarto program |
+| `install` | Downloads and installs something |
+| `tinytex` | Lightweight LaTeX engine for PDF output |
+
+> Quarto handles the download automatically. May take a few minutes.
+
+### Alternatives (if TinyTeX fails):
+TeX Live · MiKTeX
 
 ---
 

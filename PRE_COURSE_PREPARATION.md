@@ -107,7 +107,7 @@ What to do:
 
 ![Python download page — click "Or get the standalone installer for Python 3.14.3" to download the .exe file](images/download_python.png)
 
-![Python installer — check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*7nOyowsPsGI19pZT.png)
+![Python installer — check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](images/installation_python.png)
 
 5. Finish the installation.
 
@@ -209,9 +209,13 @@ Download:
 
 - https://quarto.org/docs/get-started/
 
+Use the **current release v1.9.36** — do not use the pre-release version.
+
+![Quarto download page — select the current release v1.9.36, not the pre-release](images/download_qualto.png)
+
 What to do:
 
-1. Download the installer for your operating system.
+1. Download the **v1.9.36** installer for your operating system (`.msi` on Windows, `.pkg` on Mac).
 2. Run the installer.
 3. Finish installation.
 
