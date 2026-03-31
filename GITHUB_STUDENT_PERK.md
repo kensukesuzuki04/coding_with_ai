@@ -18,13 +18,13 @@ To get GitHub Copilot Pro for free as a student, you need to:
 1. Create a GitHub account
 2. Set up Two-Factor Authentication (2FA)
 3. Fill in Billing Information (no payment required)
-4. Upload your unofficial transcript as proof of enrollment
+4. Upload your Enrollment Verification certificate as proof of enrollment
 
 ---
 
 ## Step 1: Create a GitHub Account
 
-Go to https://github.com and click **Sign up** in the top-right corner.
+Go to **https://github.com** and click **Sign up** in the top-right corner.
 
 ![GitHub homepage — click "Sign up" in the top-right corner](images/github_studentperk/slide_02.png)
 
@@ -42,76 +42,37 @@ In Settings, scroll down on the left sidebar and click **Password and authentica
 
 ![GitHub Settings — click "Password and authentication" in the left sidebar](images/github_studentperk/slide_04.png)
 
-Scroll down to **Two-factor authentication** and enable it. You can use the same authenticator app you already use for Clark University (e.g., Microsoft Authenticator or Google Authenticator).
+Scroll down to **Two-factor authentication** and enable it. You can use the same authenticator app you already use for Clark University.
 
-![GitHub Two-factor authentication settings — enable using an authenticator app](images/github_studentperk/slide_05.png)
+![GitHub Two-factor authentication — enable using an authenticator app](images/github_studentperk/slide_05.png)
 
 ---
 
 ## Step 3: Apply for the GitHub Student Developer Pack
 
-Go to https://education.github.com/pack and apply for the Student Developer Pack.
+Go to **https://education.github.com/pack** and apply for the Student Developer Pack.
 
-During the application, GitHub will ask you to fill in **Billing Information**. This does **not** require a credit card or any payment. Just complete the form.
+During the application, GitHub will ask you to fill in **Billing Information**. This does **not** require a credit card or any payment. Go to **Settings → Billing and licensing → Payment information** and click **Edit** next to Billing information.
 
-Go to **Settings → Billing and licensing → Payment information** and click **Edit** next to Billing information.
-
-![GitHub Billing settings — click Edit on Billing information (no payment required)](images/github_studentperk/slide_06.png)
+![GitHub Billing — click Edit on Billing information (no payment required)](images/github_studentperk/slide_06.png)
 
 ---
 
-## Step 4: Get Your Unofficial Transcript
+## Step 4: Get Your Enrollment Verification Certificate
 
-GitHub requires proof that you are currently enrolled. The easiest option is an **unofficial transcript** from CUWeb showing your current courses.
+GitHub requires proof that you are currently enrolled. Use the **Enrollment Verification** certificate from CUWeb.
 
 ### 4a. Go to CUWeb
 
-Log in to CUWeb at https://cuweb.clarku.edu. Under **Student Records and Registration**, click **Student Profile**.
+Log in to CUWeb at **https://cuweb.clarku.edu**. Under **Student Records and Registration**, click **Enrollment Verification**.
 
-![CUWeb — Student Records and Registration, click Student Profile](images/github_studentperk/slide_07.png)
+![CUWeb — click Enrollment Verification under Student Records and Registration](images/github_studentperk/slide_07.png)
 
-### 4b. Open Academic Transcript
+### 4b. Take a Screenshot
 
-In your Student Profile, find and click **Unofficial Academic Transcript** in the left sidebar.
+CUWeb will display your **Current Enrollment Verification Certificate**. Take a screenshot of this page and upload the image when GitHub asks for proof of enrollment.
 
-![CUWeb Student Profile — click Unofficial Academic Transcript in the sidebar](images/github_studentperk/slide_08.png)
-
-### 4c. Select Unofficial Transcript and Submit
-
-Set **Transcript Type** to **Unofficial Transcript - Web** and click **Submit**.
-
-![CUWeb Academic Transcript page — select "Unofficial Transcript - Web" and click Submit](images/github_studentperk/slide_09.png)
-
-### 4d. Download as PDF
-
-When the transcript loads, click the **Print** button in the top-right corner and save it as a PDF file.
-
-![Unofficial transcript — click the Print/PDF button in the top-right corner](images/github_studentperk/slide_10.png)
-
-### 4e. Confirm Your Spring Course Is Listed
-
-Before uploading, make sure your **Spring 2026** courses are visible on the transcript. GitHub needs to see that you are currently enrolled this semester.
-
-![Unofficial transcript — confirm Spring 2026 courses are listed](images/github_studentperk/slide_11.png)
-
-### 4e. Convert the Transcript to an Image for Upload
-
-**GitHub only accepts image files** (not PDFs) as proof of enrollment. Your image must show:
-
-- Your **name**
-- Your **current enrollment status** (Spring 2026 courses listed)
-
-![GitHub only accepts image files — include your name and Spring 2026 enrollment](images/github_studentperk/slide_12.png)
-
-**Option 1:** Zoom out in your PDF viewer to display multiple pages at once, then take a screenshot.
-
-![Option 1 — zoom out to show all transcript pages and take a screenshot](images/github_studentperk/slide_13.png)
-
-**Option 2:** Take separate screenshots of each page, arrange them side-by-side in PowerPoint or Word, then take a screenshot of that combined view.
-
-![Option 2 — arrange screenshots side-by-side in PPT or Word, then screenshot](images/github_studentperk/slide_14.png)
-
-Upload this screenshot image when GitHub asks for proof of enrollment.
+![Current Enrollment Verification Certificate — take a screenshot to upload to GitHub](images/github_studentperk/slide_08.png)
 
 ---
 
@@ -121,8 +82,7 @@ Upload this screenshot image when GitHub asks for proof of enrollment.
 - [ ] Two-factor authentication enabled
 - [ ] Billing information filled out (no payment)
 - [ ] Student Developer Pack application submitted at https://education.github.com/pack
-- [ ] Unofficial transcript downloaded as PDF with Spring 2026 courses listed
-- [ ] Transcript uploaded to GitHub as proof of enrollment
+- [ ] Enrollment Verification certificate screenshot ready to upload
 - [ ] Student Developer Pack approved
 - [ ] GitHub Copilot Pro active on your account
 
@@ -133,13 +93,13 @@ Upload this screenshot image when GitHub asks for proof of enrollment.
 ### "My application was not approved"
 
 - Make sure you used your `@clarku.edu` email address on your GitHub account.
-- Make sure your transcript shows your **current semester** courses.
+- Make sure your Enrollment Verification certificate shows your **current semester** enrollment.
 - Allow a few hours to a few days for approval.
 
 ### "GitHub is asking for payment"
 
-- You should not need to enter payment information. Just fill in the billing address fields and leave the payment method blank or use the free student option.
+- You should not need to enter payment information. Just fill in the billing address fields and leave the payment method section as-is.
 
-### "I cannot find Unofficial Academic Transcript in CUWeb"
+### "I cannot find Enrollment Verification in CUWeb"
 
-- Log in to CUWeb and go to **Student Records and Registration** → **Student Profile** → look in the left sidebar for **Unofficial Academic Transcript**.
+- Log in to CUWeb and go to **Student Records and Registration** → look for **Enrollment Verification** in the list.

@@ -54,13 +54,10 @@ format:
 
 Full step-by-step guide: [GITHUB_STUDENT_PERK.md](GITHUB_STUDENT_PERK.md)
 
-Overview:
-
 1. Create a GitHub account
 2. Set up Two-Factor Authentication (2FA)
 3. Fill in Billing Information (no payment required)
-4. Upload your unofficial transcript as proof of enrollment
-5. Activate GitHub Copilot Pro on your account
+4. Upload your Enrollment Verification certificate as proof of enrollment
 
 ---
 
@@ -68,11 +65,7 @@ Overview:
 
 Go to **https://github.com** and click **Sign up** (top-right corner).
 
-:::: {.columns}
-::: {.column width="100%"}
 ![GitHub homepage — click "Sign up" in the top-right corner](images/github_studentperk/slide_02.png){width=75%}
-:::
-::::
 
 ---
 
@@ -110,73 +103,19 @@ Go to **Settings → Billing and licensing → Payment information** and click *
 
 ---
 
-## Step 1d: Get Your Unofficial Transcript
+## Step 1d: Get Enrollment Verification
 
-GitHub needs proof you are currently enrolled. Use your **unofficial transcript from CUWeb**.
+Log in to **https://cuweb.clarku.edu**. Under **Student Records and Registration**, click **Enrollment Verification**.
 
-Log in to CUWeb and go to **Student Records and Registration → Student Profile**.
-
-![CUWeb — click Student Profile under Student Records and Registration](images/github_studentperk/slide_07.png){width=70%}
+![CUWeb — click Enrollment Verification under Student Records and Registration](images/github_studentperk/slide_07.png){width=70%}
 
 ---
 
-## Step 1d: Unofficial Transcript (cont.)
+## Step 1d: Take a Screenshot
 
-In your Student Profile, click **Unofficial Academic Transcript** in the left sidebar.
+CUWeb displays your **Current Enrollment Verification Certificate**. Take a screenshot and upload it when GitHub asks for proof of enrollment.
 
-![CUWeb Student Profile — click Unofficial Academic Transcript](images/github_studentperk/slide_08.png){width=70%}
-
----
-
-## Step 1d: Unofficial Transcript (cont.)
-
-Set **Transcript Type** to **Unofficial Transcript - Web** and click **Submit**.
-
-![Select "Unofficial Transcript - Web" and click Submit](images/github_studentperk/slide_09.png){width=70%}
-
----
-
-## Step 1d: Unofficial Transcript (cont.)
-
-Click the **Print** button (top-right) and save as a **PDF file**.
-
-![Click the Print/PDF button to download the transcript](images/github_studentperk/slide_10.png){width=70%}
-
----
-
-## Step 1d: Unofficial Transcript (cont.)
-
-Make sure your **Spring 2026 courses are listed** before uploading.
-
-![Confirm Spring 2026 courses appear on your transcript](images/github_studentperk/slide_11.png){width=70%}
-
-### Important: GitHub only accepts **image files**, not PDFs.
-
----
-
-## Step 1d: Prepare Your Transcript Image
-
-Your image must show your **name** and **Spring 2026 enrollment**.
-
-![GitHub requires an image file showing your name and current enrollment status](images/github_studentperk/slide_12.png){width=70%}
-
----
-
-## Step 1d: Screenshot Option 1
-
-Zoom out in your PDF viewer to display all transcript pages together, then take a screenshot.
-
-![Option 1 — zoom out to show all pages at once and take a screenshot](images/github_studentperk/slide_13.png){width=70%}
-
----
-
-## Step 1d: Screenshot Option 2
-
-Take separate screenshots of each page, place them side-by-side in PowerPoint or Word, then take a screenshot of the combined view.
-
-![Option 2 — arrange screenshots side-by-side in PPT or Word, then screenshot the whole thing](images/github_studentperk/slide_14.png){width=70%}
-
-Upload this image when GitHub asks for proof of enrollment.
+![Current Enrollment Verification Certificate — take a screenshot to upload](images/github_studentperk/slide_08.png){width=70%}
 
 ---
 
