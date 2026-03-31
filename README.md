@@ -15,6 +15,6 @@ This repository contains setup and writing guides for Clark University Economics
 
 ## Slides
 
-- [Pre-Course Setup & Quarto Guide (slides)](setup-guide-slides.html)
+- [Pre-Course Setup & Quarto Guide (slides)](https://kensukesuzuki04.github.io/coding_with_ai/setup-guide-slides.html)
 
 These documents were prepared with GitHub Copilot under Professor Suzuki's instruction and revision.
