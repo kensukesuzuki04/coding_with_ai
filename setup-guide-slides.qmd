@@ -48,16 +48,109 @@ format:
 
 # Part 1: Pre-Course Setup
 
-## Step 1: GitHub Account & Copilot {.smaller}
+## Step 1: GitHub Account & Copilot
 
-### What to Do:
+**Do this first — verification can take a few days.**
 
-1. Create a GitHub account at **https://github.com/signup**
-2. Apply for GitHub Student Developer Pack at **https://education.github.com/pack**
-3. Activate GitHub Copilot on your account
-4. Sign in with this account in VS Code when prompted
+Full step-by-step guide: [GITHUB_STUDENT_PERK.md](GITHUB_STUDENT_PERK.md)
 
-⏱️ **Important**: Approval may take time, start early!
+Overview:
+
+1. Create a GitHub account
+2. Set up Two-Factor Authentication (2FA)
+3. Fill in Billing Information (no payment required)
+4. Upload your unofficial transcript as proof of enrollment
+5. Activate GitHub Copilot Pro on your account
+
+---
+
+## Step 1a: Create a GitHub Account
+
+Go to **https://github.com** and click **Sign up** (top-right corner).
+
+:::: {.columns}
+::: {.column width="100%"}
+![GitHub homepage — click "Sign up" in the top-right corner](images/github_studentperk/slide_02.png){width=75%}
+:::
+::::
+
+---
+
+## Step 1b: Set Up Two-Factor Authentication
+
+From your GitHub Dashboard, click your **profile icon → Settings**.
+
+![GitHub Dashboard — click profile icon, then Settings](images/github_studentperk/slide_03.png){width=70%}
+
+---
+
+## Step 1b: Two-Factor Authentication (cont.)
+
+In Settings, click **Password and authentication** in the left sidebar.
+
+![GitHub Settings — click "Password and authentication"](images/github_studentperk/slide_04.png){width=70%}
+
+---
+
+## Step 1b: Two-Factor Authentication (cont.)
+
+Enable **Two-factor authentication**. You can use the same authenticator app you use for Clark University.
+
+![Enable 2FA — use the same app as Clarku](images/github_studentperk/slide_05.png){width=70%}
+
+---
+
+## Step 1c: Set Up Billing Information
+
+Go to **Settings → Billing and licensing → Payment information** and click **Edit** next to Billing information.
+
+**No payment required** — just fill in the address fields.
+
+![GitHub Billing — click Edit on Billing information (no payment needed)](images/github_studentperk/slide_06.png){width=70%}
+
+---
+
+## Step 1d: Get Your Unofficial Transcript
+
+GitHub needs proof you are currently enrolled. Use your **unofficial transcript from CUWeb**.
+
+Log in to CUWeb and go to **Student Records and Registration → Student Profile**.
+
+![CUWeb — click Student Profile under Student Records and Registration](images/github_studentperk/slide_07.png){width=70%}
+
+---
+
+## Step 1d: Unofficial Transcript (cont.)
+
+In your Student Profile, click **Unofficial Academic Transcript** in the left sidebar.
+
+![CUWeb Student Profile — click Unofficial Academic Transcript](images/github_studentperk/slide_08.png){width=70%}
+
+---
+
+## Step 1d: Unofficial Transcript (cont.)
+
+Set **Transcript Type** to **Unofficial Transcript - Web** and click **Submit**.
+
+![Select "Unofficial Transcript - Web" and click Submit](images/github_studentperk/slide_09.png){width=70%}
+
+---
+
+## Step 1d: Unofficial Transcript (cont.)
+
+Click the **Print** button (top-right) and save as a **PDF file**.
+
+![Click the Print/PDF button to download the transcript](images/github_studentperk/slide_10.png){width=70%}
+
+---
+
+## Step 1d: Unofficial Transcript (cont.)
+
+Make sure your **Spring 2026 courses are listed** before uploading.
+
+![Confirm Spring 2026 courses appear on your transcript](images/github_studentperk/slide_11.png){width=70%}
+
+Upload this PDF to GitHub when asked for proof of enrollment.
 
 ---
 
