@@ -140,7 +140,7 @@ Download: **https://www.python.org/downloads/**
 :::
 
 ::: {.column width="50%"}
-![Check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](https://docs.python.org/3/_images/win_installer.png){width=100%}
+![Check "Add Python 3.14 to PATH" at the bottom before clicking Install Now](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*7nOyowsPsGI19pZT.png){width=100%}
 :::
 ::::
 
@@ -166,7 +166,7 @@ python3 --version
 :::
 
 ::: {.column width="45%"}
-![Command Prompt showing Python version after a successful install](https://media.geeksforgeeks.org/wp-content/uploads/20200726144343/Untitleddesign3-660x386.png){width=100%}
+![Command Prompt showing Python version after a successful install](images/cmd_python.png){width=100%}
 :::
 ::::
 
