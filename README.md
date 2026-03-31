@@ -13,4 +13,8 @@ This repository contains setup and writing guides for Clark University Economics
 3. [Quarto Draft Guide](QUARTO_DRAFT_GUIDE.md)
 4. [Student Copilot Instructions](STUDENT_COPILOT_INSTRUCTIONS.md)
 
+## Slides
+
+- [Pre-Course Setup & Quarto Guide (slides)](setup-guide-slides.html)
+
 These documents were prepared with GitHub Copilot under Professor Suzuki's instruction and revision.
