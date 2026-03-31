@@ -126,17 +126,31 @@ Download: **https://code.visualstudio.com/download**
 
 ---
 
-## Step 3: Install Python
-
-Download: **https://www.python.org/downloads/**
+## Step 3: Install Python — Download
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Key Step:
-**✓ Check "Add Python to PATH"** during installation
+Go to **https://www.python.org/downloads/**
 
-- **Windows**: click *"Or get the standalone installer for Python 3.14.3"* (.exe)
-- **Mac**: click *"Download Python 3.14.3"* (.pkg) — PATH is set automatically
+- **Windows**: click *"Or get the standalone installer for Python 3.14.3"* to download a `.exe` file
+- **Mac**: click *"Download Python 3.14.3"* to download a `.pkg` file
+:::
+
+::: {.column width="50%"}
+![Python download page — click the standalone installer link](images/download_python.png){width=100%}
+:::
+::::
+
+---
+
+## Step 3: Install Python — PATH Checkbox
+
+:::: {.columns}
+::: {.column width="50%"}
+### Key Step (Windows only):
+**✓ Check "Add Python to PATH"** before clicking Install Now
+
+On Mac, the installer sets PATH automatically — no checkbox needed.
 :::
 
 ::: {.column width="50%"}
