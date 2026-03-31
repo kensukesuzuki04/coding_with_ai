@@ -130,22 +130,35 @@ If you are using Windows and have never used the command line before:
 
 If you are using a Mac and have never used the command line before:
 
-1. Press `Command + Space` to open Spotlight search.
+1. Press `Command (⌘) + Space` to open **Spotlight search** — a search bar appears in the center of the screen.
 2. Type `Terminal`.
-3. Open the **Terminal** application.
-4. A window will appear where you can type commands.
+3. Click **Terminal** when it appears at the top of the results.
+
+![Mac Spotlight search — type "Terminal" and click the result to open it](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/01/2-terminal-in-spotlight.png)
+
+4. A white or dark window will appear. You can type commands there.
+
+> **Mac tip:** Terminal on Mac works the same as Command Prompt on Windows for our purposes — you type commands and press Enter to run them.
 
 Then run:
 
+**Windows:**
 ```bash
 python --version
 ```
 
-If that does not work, try:
+If that does not work on Windows, try:
 
 ```bash
 py --version
 ```
+
+**Mac:**
+```bash
+python3 --version
+```
+
+> **Mac tip:** On Mac, always use `python3` instead of `python`. Typing just `python` may show an error or open a different version.
 
 You should see a Python 3 version number.
 
@@ -183,6 +196,7 @@ The easiest way to run this test is in VS Code:
 
 Then run:
 
+**Windows:**
 ```bash
 python test.py
 ```
@@ -191,6 +205,11 @@ If `python` does not work on Windows, try:
 
 ```bash
 py test.py
+```
+
+**Mac:**
+```bash
+python3 test.py
 ```
 
 You should see:

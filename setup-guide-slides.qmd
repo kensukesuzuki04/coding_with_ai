@@ -160,22 +160,48 @@ On Mac, the installer sets PATH automatically — no checkbox needed.
 
 ---
 
-## Step 3: Test Python
+## Opening the Terminal {.smaller}
 
-Open the VS Code terminal (**Terminal > New Terminal**) and run:
+:::: {.columns}
+::: {.column width="50%"}
+**Windows — Command Prompt:**
+
+1. Click the **Start menu**
+2. Type `cmd`
+3. Open **Command Prompt**
+
+**Mac — Terminal:**
+
+1. Press **`⌘ Command + Space`** to open Spotlight
+2. Type `Terminal`
+3. Click **Terminal** in the results
+:::
+
+::: {.column width="50%"}
+![Mac Spotlight — type "Terminal" and click the result](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/01/2-terminal-in-spotlight.png){width=100%}
+:::
+::::
+
+---
+
+## Step 3: Test Python
 
 :::: {.columns}
 ::: {.column width="55%"}
-**Windows:**
+**Windows** — in Command Prompt or VS Code terminal:
 ```bash
 python --version
 # or
 py --version
 ```
-**Mac:**
+
+**Mac** — in Terminal or VS Code terminal:
 ```bash
 python3 --version
 ```
+
+> **Mac tip:** Always use `python3`, not `python` — on Mac, `python` may not work or point to an old version.
+
 **Expected**: `Python 3.14.3` ✓
 :::
 
@@ -198,9 +224,11 @@ print("Python is working")
 ```
 
 3. Run:
-```bash
-python test.py
-```
+
+   Windows: `python test.py` (or `py test.py`)
+
+   Mac: `python3 test.py`
+
 **Expected**: `Python is working` ✓
 :::
 
