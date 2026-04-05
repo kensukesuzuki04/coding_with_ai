@@ -5,7 +5,7 @@ author: "Your Name"
 date: today
 format:
   revealjs:
-    output-file: ai-coding-prompt-slides.html
+    output-file: visualization_ai_guide.html
     theme: [default]
     slide-number: true
     incremental: true
