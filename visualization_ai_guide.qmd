@@ -147,11 +147,12 @@ Example prompt:
 
 ## Start With Basic Plots First
 
+- Start with the national trend.
 - Start with a simple line plot or bar plot.
 - Complex visuals can hide the data pattern.
 - If the first chart is unclear, do not trust later charts.
 
-## Example: Wrong Plot
+## Example: Does This Plot Look Right?
 
 ![](images/wrong_plot.png){fig-alt="Example of a wrong plot with suspicious pattern" width=90%}
 
@@ -169,106 +170,109 @@ Example prompt:
 - Check one intermediate table before each new chart.
 - Looking at data step by step is how we avoid hidden mistakes.
 
-## What Happened In The Actual Dialogue
+## AI Suggested A Fix. Check It Anyway.
 
-- I asked AI why the plot looked wrong and which series should be used.
-- AI answered that the series ending in 003 looked like the correct measure.
-- I then asked AI to explain why, and to show official documentation before accepting that conclusion.
+- I noticed that the plot looked wrong.
+- I could re-check the data myself, or ask AI to help inspect it again.
+- AI suggested that only series ending in 003 should be plotted, and then rewrote the figure.
+- That is still not enough.
+- A corrected figure is not proof.
+- You should ask why AI judged this version to be correct.
+
+## AI Rewrote The National Trend
+
+![](images/econ10_labor_market/national_trend.png){fig-alt="Corrected national trend figure" width=82%}
+
+- This version looks more plausible.
+- But you should not trust it only because AI redrew it.
+- Ask why AI thinks this is the correct series.
 
 ## When AI Says "003 Is Correct," Ask For Evidence
 
-- *Why do you think the series ending in 003 is the correct measure?*
+- *Why do you determine the series ending in 003 is the correct measure?*
 - *Show the official documentation and explain how you mapped code to meaning.*
 - *Show why other series codes are not the target variable for this analysis.*
 - Do not accept "AI says so." Ask for a credible source and reasoning chain.
 
-## How To Give Better Prompts
+## After The National Trend, Look At Regional Patterns
 
-- Context
-- Exact task
-- Constraints
-- Validation checks
-- Output format
+- Once the national trend looks reasonable, move to more detailed views.
+- For example, compare states or regions.
+- An interactive map is one useful example.
 
-## Prompt Examples For Class
+## Example: Interactive Map
 
-Data task prompt:
+- Use an interactive map to inspect patterns by state and year.
+- This helps you notice regional differences that a national trend cannot show.
+- Use it for exploration before deciding what to include in the final report.
 
-- *Use the dataset I provide, clean it step by step, and explain each cleaning decision in plain language.*
+## Interactive Map Workflow
 
-Visualization prompt:
+- An interactive map is useful for exploration.
+- But you cannot place that interactive version in a PDF report.
+- So AI can also create a static map for Quarto.
 
-- *Create both interactive and static maps. Save static figures to output for PDF with readable labels.*
+## Example: Static Map For The Report
 
-Debug prompt:
+![](images/econ10_labor_market/map_latest_static.png){fig-alt="Map output used for the report" width=92%}
 
-- *Here is my error traceback. Explain the cause simply, give the minimal fix, and one check that proves it works.*
+## Ask For Concrete Revisions
 
-## Example: Weak vs Better
+- *The plot still looks wrong. Check the data being plotted again.*
+- *Use only the correct series definition and rewrite the figure.*
+- *Save the revised output in output/ with a clear file name.*
 
-Weak:
+## Ask AI To Organize The Quarto Report
 
-- *Make a chart from this data.*
+- *Create a simple Quarto report with sections for data, cleaning, figures, and findings.*
+- *Include source citation, retrieval date, and file path.*
+- *Show me where I should write my own observations and interpretation.*
 
-Better:
+## Let AI Build The Skeleton, Not Your Thinking
 
-- *Use the specified dataset, verify variable definitions, and handle missing values.*
-- *Generate one trend figure and one map with source citation and a short interpretation.*
+- Ask AI to suggest headings and structure.
+- Ask AI where your observation, interpretation, and limitation should go.
+- Write your own main finding, supporting evidence, and caution.
+- Write the actual interpretation yourself.
 
-## Allow vs Keep (Quick Comparison)
+<span style="color:#c62828; font-weight:700;">Your brain is still required here.</span>
 
-- **Allow**: grants permission (for example, file access, command execution, external access).
-- **Keep**: keeps/downloads a file that your browser or OS flagged.
-- Check what is being requested.
-- Check whether it is necessary for your current task.
-- If unsure, do not click and ask for clarification first.
+## Important Cautions
 
-## Permission Safety Rule
+- Permission safety
+- Academic integrity
+- Responsibility
 
-- AI can access files/folders only after permission is granted.
-- Be careful when clicking **Allow** or **Keep**.
-- Do not approve unclear requests.
-- Do not approve unrelated requests.
+## Permission Safety
+
+- **Allow** grants permission, such as file access or command execution.
+- **Keep** keeps or downloads a file your browser or OS flagged.
 - Approve only what you understand and need.
+- If you are unsure, stop and ask first.
 
-## How To Check If Results Are Trustworthy
+## Academic Integrity: Think Of A Calculator
 
-- Data source is official and cited
-- Variable definition matches your concept
-- Time period and units are correct
-- Missing/suppressed values are handled
-- Results pass a sanity check
+- Using a calculator is not considered cheating.
+- You decide what should be calculated.
+- You give the instruction.
 
-## Credibility Prompt Template
+## Academic Integrity: The Same Logic Applies To AI
 
-Use this prompt:
+- The same logic applies to AI use.
+- Even a very polished analysis should get 0 if it does not answer the assignment for this course.
+- AI output does not replace your academic judgment.
 
-- *Validate this workflow.*
-- *List assumptions, data quality issues, and checks for series definition, missing values, and coverage.*
+## Responsibility: You Must Be Able To Explain It
 
-## How To Summarize
+- You must be able to explain every step in your own words.
+- That includes data collection, series choice, and what each figure shows.
+- It is fine to let AI handle basic mechanical tasks.
+- For example: drawing a line chart or coloring a map from low unemployment in green to high unemployment in red.
+- Do not include anything complicated that you cannot explain yourself.
 
-- Main finding
-- Supporting evidence
-- Limitation/caution
-- Policy or course relevance
-
-## Summary Prompt Example
-
-- *Based on these figures, write 3 findings and 2 limitations in plain language.*
-- *Do not claim causality.*
-- *Keep each bullet to one sentence.*
-
-## Student Exercise: Prompt Lab
-
-- Write one starter prompt.
-- Write one credibility-check prompt.
-- Run code and inspect outputs.
-- Write one 4-line summary using the structure above.
-- Share what changed after prompt revision.
 
 ## Final Takeaway
 
-- AI improves coding speed.
-- Prompt quality shapes output quality.
-- Human responsibility remains: verify, interpret, and explain.
+- Start simple, and check the data step by step.
+- Use AI for structure and mechanical coding, not for unexamined conclusions.
+- Verify evidence, and explain every result in your own words.
