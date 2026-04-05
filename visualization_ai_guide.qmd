@@ -11,6 +11,7 @@ format:
     width: 1600
     height: 900
     margin: 0.02
+    center: true
     code-overflow: wrap
     embed-resources: true
 ---
@@ -67,26 +68,30 @@ Example brainstorming prompt:
 - *I want to analyze labor market conditions with Python.*
 - *Suggest several feasible directions.*
 - *For each option, say what data is needed and why it is useful.*
-- clarifies your research question
-- narrows candidate datasets
-- improves AI recommendations
+
+### This Helps You
+
+- clarify your research question
+- narrow candidate datasets
+- get better AI recommendations
 
 ## Step-by-step: Data Source → Download → Save
 
-- Ask for candidate data sources
+Task 1: Choose the source
 
 - *Suggest 3-5 credible data sources for this task.*
 - *Recommend one and show the exact URL and file name.*
 
-- Fix the save location
+Task 2: Plan the folder structure
 
-- *Create folders and save raw files under data/. Save figures under output/.*
+- *Suggest a simple folder structure for this project.*
+- *Save raw data under data/ and figures under output/.*
 
-- Verify after download
+Task 3: Verify the download
 
 - *Check that the file exists and show the first 20 lines so we can verify structure.*
 
-- Keep a report-ready log
+Task 4: Keep a report-ready log
 
 - *In the report, include the source URL, retrieval date, local file path, and filter rules.*
 
@@ -98,9 +103,12 @@ Example prompt:
 
 - *Suggest several effective visualization options for this dataset.*
 - *For each one, explain the question, variables, and whether it should be static or interactive.*
-- which chart/map to build first
-- what comparison you want to emphasize
-- which outputs are needed for PDF vs interactive use
+
+### This Helps You Decide
+
+- which chart or map to build first
+- what comparison to emphasize
+- which outputs you need for PDF vs interactive use
 
 ## Ask AI To Write Python Visualization Code
 
@@ -111,10 +119,12 @@ Example prompt:
 - *Using the saved file in data/ and the selected plan, write Python code to clean the data and create the required charts/maps.*
 - *Save figures in output/ and add brief comments for a beginner.*
 
-- input file path is correct
-- output file names are specified
-- required packages are listed
-- code includes a quick preview (`head()` / row count)
+### Check The Prompt
+
+- the correct input file path
+- the output file names
+- the required packages
+- a quick preview (`head()` or row count)
 
 ## If You Do Not Understand The Code, Ask
 
