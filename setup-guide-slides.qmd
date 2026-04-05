@@ -52,7 +52,7 @@ format:
 
 **Do this first — verification can take a few days.**
 
-Full step-by-step guide: [GITHUB_STUDENT_PERK.md](GITHUB_STUDENT_PERK.md)
+Full step-by-step guide: [GitHub Student Perk Guide](https://github.com/kensukesuzuki04/coding_with_ai/blob/main/GITHUB_STUDENT_PERK.md)
 
 1. Create a GitHub account
 2. Set up Two-Factor Authentication (2FA)
