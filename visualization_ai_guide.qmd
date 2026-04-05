@@ -8,7 +8,9 @@ format:
     output-file: visualization_ai_guide.html
     theme: [default]
     slide-number: true
-    incremental: true
+    width: 1600
+    height: 900
+    margin: 0.02
     code-overflow: wrap
     embed-resources: true
 ---
@@ -27,8 +29,6 @@ The key is:
 
 ## Learning Objective (Today)
 
-By the end of this class, students can:
-
 - write clear prompts for coding tasks,
 - check whether AI output is trustworthy,
 - and summarize results in plain language.
@@ -43,18 +43,11 @@ By the end of this class, students can:
 
 ## How To Start The Chat
 
-Start with clear context in one short block.
-
 Example starter prompt:
 
-- *I am a student of ECON10 and a beginner in Python. Help me do data collection, cleaning, visualization, and reporting in Quarto. Explain each step in plain language so I can be accountable for the final work.*
+- *I am a student of ECON10 and a beginner in Python. Help me collect, clean, visualize, and report data in Quarto. Explain each step in plain language so I can stay accountable.*
 
 ## Context Information To Include
-
-Real prompt pattern used in this project (short):
-
-- *I am a student of ECON10 and a beginner in Python. I want to visualize macroeconomic data and learn the workflow of data collection, cleaning, and visualization with AI.*
-- *Please record every data source and summarize each cleaning step clearly for the final report.*
 
 Context to include:
 
@@ -66,86 +59,74 @@ Context to include:
 
 ## Brainstorm Before Asking for Data Sources
 
-When the right data source is not obvious, AI can help with brainstorming.
-
-The important point is to provide your own context first.
+- If the data source is unclear, AI can help brainstorm.
+- Give your context first.
 
 Example brainstorming prompt:
 
-- *I want to analyze labor market conditions with Python. Suggest several feasible directions (for example unemployment trend, regional comparison, minimum wage comparison, and map-based visualization). For each option, briefly state what data is needed and why it is useful.*
-
-Why this step matters:
-
+- *I want to analyze labor market conditions with Python.*
+- *Suggest several feasible directions.*
+- *For each option, say what data is needed and why it is useful.*
 - clarifies your research question
 - narrows candidate datasets
-- improves recommendation quality because AI uses your context
+- improves AI recommendations
 
-## Step-by-step: Data Source -> Download -> Save
+## Step-by-step: Data Source → Download → Save
 
-Ask AI to identify candidate data sources
+- Ask for candidate data sources
 
-- *Suggest 3-5 credible data sources for this task, then recommend one and show the exact URL and file name.*
+- *Suggest 3-5 credible data sources for this task.*
+- *Recommend one and show the exact URL and file name.*
 
-Fix the save location
+- Fix the save location
 
 - *Create folders and save raw files under data/. Save figures under output/.*
 
-Verify after download
+- Verify after download
 
 - *Check that the file exists and show the first 20 lines so we can verify structure.*
 
-Keep a report-ready data log
+- Keep a report-ready log
 
-- *In the report, explicitly include source URL, retrieval date, local file path, and filter rules.*
+- *In the report, include the source URL, retrieval date, local file path, and filter rules.*
 
 ## Decide Which Visualization To Build
 
-Before asking AI to write code, clarify which visualization is most useful.
+- Decide the visualization before asking for code.
 
 Example prompt:
 
-- *Suggest several effective visualization options for this dataset. For each option, explain what question it answers, what variables are needed, and whether it should be static or interactive.*
-
-Then decide:
-
+- *Suggest several effective visualization options for this dataset.*
+- *For each one, explain the question, variables, and whether it should be static or interactive.*
 - which chart/map to build first
 - what comparison you want to emphasize
 - which outputs are needed for PDF vs interactive use
 
 ## Ask AI To Write Python Visualization Code
 
-After deciding the visualization plan and saving the data, this is the stage where AI can draft runnable Python code.
+- After planning and saving the data, ask AI for runnable code.
 
 Example prompt:
 
-- *Using the saved file in data/ and the selected visualization plan, write Python code to clean the data and create the required charts/maps. Save figures in output/. Add brief comments so a beginner can follow each step.*
-
-What to confirm before running:
+- *Using the saved file in data/ and the selected plan, write Python code to clean the data and create the required charts/maps.*
+- *Save figures in output/ and add brief comments for a beginner.*
 
 - input file path is correct
 - output file names are specified
 - required packages are listed
-- code includes a quick data preview (`head()` / row count)
+- code includes a quick preview (`head()` / row count)
 
 ## If You Do Not Understand The Code, Ask
 
-- If you do not understand what AI-generated code is doing, always ask follow-up questions.
-- Ask until you can explain each key step in your own words.
-
-Accountability principle:
-
+- Ask follow-up questions.
+- Ask until you can explain each key step.
 - Even when using AI for coding, you are fully responsible for what the code does and what results you report.
 
 ## How To Open Interactive Window
 
-Use one of these methods in VS Code:
-
 - Open a `.py` file and press `Shift+Enter` on a line/selection.
 - Right-click in the editor and choose `Run Current File in Interactive Window`.
-- Command Palette (`Ctrl+Shift+P`) -> `Python: Run Current File in Interactive Window`.
-
-Then:
-
+- Command Palette (`Ctrl+Shift+P`) → `Python: Run Current File in Interactive Window`.
 - run code block by block
 - inspect outputs and error tracebacks
 - revise prompt and rerun
@@ -156,9 +137,9 @@ Then:
 
 ## Start With Basic Plots First
 
-- Start with one simple line plot or bar plot.
-- Complex visuals too early can hide what the data is doing.
-- If the first chart is unclear, you cannot trust later charts.
+- Start with a simple line plot or bar plot.
+- Complex visuals can hide the data pattern.
+- If the first chart is unclear, do not trust later charts.
 
 ## Example: Wrong Plot
 
@@ -167,7 +148,7 @@ Then:
 ## Notice When Something Looks Off
 
 - A strange spike appears in one period.
-- The trend looks unrealistic (for example, unemployment appears to rise for 50 years without interruption).
+- The trend looks unrealistic.
 - Stop and check data definitions, missing values, and filters before interpretation.
 
 ## Prevent Errors By Checking Data Step by Step
@@ -176,9 +157,6 @@ Then:
 - Check variable meaning before aggregation.
 - Check missing or suppressed values.
 - Check one intermediate table before each new chart.
-
-Message:
-
 - Looking at data step by step is how we avoid hidden mistakes.
 
 ## What Happened In The Actual Dialogue
@@ -189,21 +167,12 @@ Message:
 
 ## When AI Says "003 Is Correct," Ask For Evidence
 
-AI may propose a rule quickly, but we still need proof.
-
-What to ask AI:
-
 - *Why do you think the series ending in 003 is the correct measure?*
 - *Show the official documentation and explain how you mapped code to meaning.*
 - *Show why other series codes are not the target variable for this analysis.*
-
-Key principle:
-
 - Do not accept "AI says so." Ask for a credible source and reasoning chain.
 
 ## How To Give Better Prompts
-
-Use this structure every time:
 
 - Context
 - Exact task
@@ -233,32 +202,26 @@ Weak:
 
 Better:
 
-- *Use the specified dataset, verify variable definitions, handle missing values, and generate one trend figure and one map with source citation and a short interpretation.*
+- *Use the specified dataset, verify variable definitions, and handle missing values.*
+- *Generate one trend figure and one map with source citation and a short interpretation.*
 
 ## Allow vs Keep (Quick Comparison)
 
 - **Allow**: grants permission (for example, file access, command execution, external access).
 - **Keep**: keeps/downloads a file that your browser or OS flagged.
-
-Before clicking either one:
-
 - Check what is being requested.
 - Check whether it is necessary for your current task.
 - If unsure, do not click and ask for clarification first.
 
 ## Permission Safety Rule
 
-AI can access data/folders or run actions only after permissions are granted.
-
-Always be careful when clicking **Allow** or **Keep**.
-
+- AI can access files/folders only after permission is granted.
+- Be careful when clicking **Allow** or **Keep**.
 - Do not approve unclear requests.
 - Do not approve unrelated requests.
 - Approve only what you understand and need.
 
 ## How To Check If Results Are Trustworthy
-
-Before believing output, verify:
 
 - Data source is official and cited
 - Variable definition matches your concept
@@ -270,11 +233,10 @@ Before believing output, verify:
 
 Use this prompt:
 
-- *Validate this workflow. List assumptions, identify possible data quality issues, and propose checks for series definition, missing values, and coverage before interpretation.*
+- *Validate this workflow.*
+- *List assumptions, data quality issues, and checks for series definition, missing values, and coverage.*
 
 ## How To Summarize
-
-Use a short structure:
 
 - Main finding
 - Supporting evidence
@@ -283,7 +245,9 @@ Use a short structure:
 
 ## Summary Prompt Example
 
-- *Based on these figures, write 3 findings and 2 limitations in plain language. Do not claim causality. Keep each bullet to one sentence.*
+- *Based on these figures, write 3 findings and 2 limitations in plain language.*
+- *Do not claim causality.*
+- *Keep each bullet to one sentence.*
 
 ## Student Exercise: Prompt Lab
 
