@@ -1,5 +1,5 @@
 ---
-title: "ECON10: How to Use AI for Coding"
+title: "How to Use AI for Coding"
 subtitle: "Prompting Strategies, Workflow, and Accountability"
 author: "Your Name"
 date: today
@@ -13,177 +13,285 @@ format:
     embed-resources: true
 ---
 
-## Why This Session
+## Value of Coding in the AI Era
 
-- AI can now do many mechanical coding tasks quickly.
-- Knowing syntax alone is less valuable than before.
-- The key skill is giving logical instructions and verifying outputs.
+- AI is not most valuable as a random Q&A tool or an essay/email draft tool.
+- AI is most powerful in coding, because AI itself is built with code.
+- This shifts the value of "native Python coding" on a CV.
+
+The key is:
+
+- Your capability to control AI so it can code for your task.
+- The idea must be yours (a calculator does not know what should be computed).
+- You must give AI a logical order of instructions.
+
+## Learning Objective (Today)
+
+By the end of this class, students can:
+
+- write clear prompts for coding tasks,
+- check whether AI output is trustworthy,
+- and summarize results in plain language.
 
 ## Today: 5 Prompt Topics
 
-1. How to start a chat with AI
-2. How to give prompts with context and important remarks
-3. What to do when prompted to click Allow or Keep
-4. How to check if data and tasks are credible
-5. How to summarize results
+- How to start a chat with AI
+- How to give prompts with context and important remarks
+- What to do when prompted to click "Allow" or "Keep"
+- How to check if data and tasks are credible
+- How to summarize results with Quarto
 
-## 1) How To Start The Chat
+## How To Start The Chat
 
 Start with clear context in one short block.
 
 Example starter prompt:
 
-- I am teaching ECON10 and I am a beginner in Python. Help me do data collection, cleaning, visualization, and reporting in Quarto. Explain each step in plain language so I can be accountable for the final work.
+- *I am a student of ECON10 and a beginner in Python. Help me do data collection, cleaning, visualization, and reporting in Quarto. Explain each step in plain language so I can be accountable for the final work.*
 
-## 1) Good First Message Template
+## Context Information To Include
 
-Use this template:
+Real prompt pattern used in this project (short):
 
-- Role: I am an ECON10 instructor.
-- Skill level: Beginner in Python.
-- Objective: Build reproducible labor market analysis.
-- Output: Python script plus Quarto-ready findings.
-- Constraints: Keep data source and cleaning steps documented.
+- *I am a student of ECON10 and a beginner in Python. I want to visualize macroeconomic data and learn the workflow of data collection, cleaning, and visualization with AI.*
+- *Please record every data source and summarize each cleaning step clearly for the final report.*
 
-## 2) How To Give Better Prompts
+Context to include:
+
+- Role: ECON10 student
+- Skill level: Beginner in Python
+- Objective: Reproducible analysis
+- Output: Python + Quarto report
+- Constraints: Source citation + cleaning log
+
+## Brainstorm Before Asking for Data Sources
+
+When the right data source is not obvious, AI can help with brainstorming.
+
+The important point is to provide your own context first.
+
+Example brainstorming prompt:
+
+- *I want to analyze labor market conditions with Python. Suggest several feasible directions (for example unemployment trend, regional comparison, minimum wage comparison, and map-based visualization). For each option, briefly state what data is needed and why it is useful.*
+
+Why this step matters:
+
+- clarifies your research question
+- narrows candidate datasets
+- improves recommendation quality because AI uses your context
+
+## Step-by-step: Data Source -> Download -> Save
+
+Ask AI to identify candidate data sources
+
+- *Suggest 3-5 credible data sources for this task, then recommend one and show the exact URL and file name.*
+
+Fix the save location
+
+- *Create folders and save raw files under data/. Save figures under output/.*
+
+Verify after download
+
+- *Check that the file exists and show the first 20 lines so we can verify structure.*
+
+Keep a report-ready data log
+
+- *In the report, explicitly include source URL, retrieval date, local file path, and filter rules.*
+
+## Decide Which Visualization To Build
+
+Before asking AI to write code, clarify which visualization is most useful.
+
+Example prompt:
+
+- *Suggest several effective visualization options for this dataset. For each option, explain what question it answers, what variables are needed, and whether it should be static or interactive.*
+
+Then decide:
+
+- which chart/map to build first
+- what comparison you want to emphasize
+- which outputs are needed for PDF vs interactive use
+
+## Ask AI To Write Python Visualization Code
+
+After deciding the visualization plan and saving the data, this is the stage where AI can draft runnable Python code.
+
+Example prompt:
+
+- *Using the saved file in data/ and the selected visualization plan, write Python code to clean the data and create the required charts/maps. Save figures in output/. Add brief comments so a beginner can follow each step.*
+
+What to confirm before running:
+
+- input file path is correct
+- output file names are specified
+- required packages are listed
+- code includes a quick data preview (`head()` / row count)
+
+## If You Do Not Understand The Code, Ask
+
+- If you do not understand what AI-generated code is doing, always ask follow-up questions.
+- Ask until you can explain each key step in your own words.
+
+Accountability principle:
+
+- Even when using AI for coding, you are fully responsible for what the code does and what results you report.
+
+## How To Open Interactive Window
+
+Use one of these methods in VS Code:
+
+- Open a `.py` file and press `Shift+Enter` on a line/selection.
+- Right-click in the editor and choose `Run Current File in Interactive Window`.
+- Command Palette (`Ctrl+Shift+P`) -> `Python: Run Current File in Interactive Window`.
+
+Then:
+
+- run code block by block
+- inspect outputs and error tracebacks
+- revise prompt and rerun
+
+## Interactive Window Screenshot
+
+![](images/interactive_window.png){fig-alt="Interactive Window screenshot" width=90%}
+
+## Start With Basic Plots First
+
+- Start with one simple line plot or bar plot.
+- Complex visuals too early can hide what the data is doing.
+- If the first chart is unclear, you cannot trust later charts.
+
+## Example: Wrong Plot
+
+![](images/wrong_plot.png){fig-alt="Example of a wrong plot with suspicious pattern" width=90%}
+
+## Notice When Something Looks Off
+
+- A strange spike appears in one period.
+- The trend looks unrealistic (for example, unemployment appears to rise for 50 years without interruption).
+- Stop and check data definitions, missing values, and filters before interpretation.
+
+## Prevent Errors By Checking Data Step by Step
+
+- Check raw file structure first.
+- Check variable meaning before aggregation.
+- Check missing or suppressed values.
+- Check one intermediate table before each new chart.
+
+Message:
+
+- Looking at data step by step is how we avoid hidden mistakes.
+
+## What Happened In The Actual Dialogue
+
+- I asked AI why the plot looked wrong and which series should be used.
+- AI answered that the series ending in 003 looked like the correct measure.
+- I then asked AI to explain why, and to show official documentation before accepting that conclusion.
+
+## When AI Says "003 Is Correct," Ask For Evidence
+
+AI may propose a rule quickly, but we still need proof.
+
+What to ask AI:
+
+- *Why do you think the series ending in 003 is the correct measure?*
+- *Show the official documentation and explain how you mapped code to meaning.*
+- *Show why other series codes are not the target variable for this analysis.*
+
+Key principle:
+
+- Do not accept "AI says so." Ask for a credible source and reasoning chain.
+
+## How To Give Better Prompts
 
 Use this structure every time:
 
-1. Context
-2. Exact task
-3. Constraints
-4. Validation checks
-5. Output format
+- Context
+- Exact task
+- Constraints
+- Validation checks
+- Output format
 
-## 2) Prompt Examples For Class
+## Prompt Examples For Class
 
 Data task prompt:
 
-- Use BLS state unemployment data, filter to unemployment rate series only, and explain each cleaning step in plain language.
+- *Use the dataset I provide, clean it step by step, and explain each cleaning decision in plain language.*
 
 Visualization prompt:
 
-- Create both interactive and static maps. Save static figures to output for PDF with readable labels.
+- *Create both interactive and static maps. Save static figures to output for PDF with readable labels.*
 
 Debug prompt:
 
-- Here is my error traceback. Explain the cause simply, give the minimal fix, and one check that proves it works.
+- *Here is my error traceback. Explain the cause simply, give the minimal fix, and one check that proves it works.*
 
-## 2) Example: Weak vs Better
+## Example: Weak vs Better
 
 Weak:
 
-- Make a chart from this data.
+- *Make a chart from this data.*
 
 Better:
 
-- Use the specified BLS file, verify series definitions, handle missing/suppressed values, and generate one trend figure and one map with source citation and a short interpretation.
+- *Use the specified dataset, verify variable definitions, handle missing values, and generate one trend figure and one map with source citation and a short interpretation.*
 
-## 3) If You See Allow Or Keep Prompts
+## Allow vs Keep (Quick Comparison)
 
-Rule: read what permission is being requested before clicking.
+- **Allow**: grants permission (for example, file access, command execution, external access).
+- **Keep**: keeps/downloads a file that your browser or OS flagged.
 
-Allow usually means:
+Before clicking either one:
 
-- permission to access workspace files
-- permission to run tools/commands
-- permission to open links or external content
+- Check what is being requested.
+- Check whether it is necessary for your current task.
+- If unsure, do not click and ask for clarification first.
 
-Keep usually means:
+## Permission Safety Rule
 
-- browser/OS security warning for downloaded files
+AI can access data/folders or run actions only after permissions are granted.
 
-## 3) Example Screenshot: Allow Prompt
+Always be careful when clicking **Allow** or **Keep**.
 
-![](images/allow_button.png){fig-alt="Example of an Allow permission prompt" width=85%}
+- Do not approve unclear requests.
+- Do not approve unrelated requests.
+- Approve only what you understand and need.
 
-- Read the permission scope before clicking.
-- Confirm the request matches your current task.
-- If unsure, decline first and ask what the permission is for.
-
-## 3) Example Screenshot: Keep Prompt
-
-![](images/keep_button.png){fig-alt="Example of a Keep download/security prompt" width=85%}
-
-- Keep only if the file is from a trusted source and expected.
-- Verify filename, source URL, and file type before keeping.
-- If unsure, cancel and re-download from the official site.
-
-## Interactive Window: Where To Click
-
-![](images/interactive_window.png){fig-alt="Interactive Window screenshot showing where to click" width=90%}
-
-- Click the run icon next to the selected code block.
-- Or highlight code and press `Shift+Enter` to send it to Interactive Window.
-- Use the Interactive Window pane to inspect outputs and traceback messages.
-
-## 3) Practical Guidance For Students
-
-Allow only when:
-
-- you trust the source
-- you understand what will be accessed
-- it is necessary for the task
-
-Do not allow when:
-
-- the scope is unclear
-- the request seems unrelated to your task
-- you do not want local files scanned/read
-
-## 4) How To Check Credibility
+## How To Check If Results Are Trustworthy
 
 Before believing output, verify:
 
-1. Data source is official and cited
-2. Variable definition matches your concept
-3. Time period and units are correct
-4. Missing/suppressed values are handled
-5. Results pass a sanity check
+- Data source is official and cited
+- Variable definition matches your concept
+- Time period and units are correct
+- Missing/suppressed values are handled
+- Results pass a sanity check
 
-## 4) Credibility Example From Our Case
-
-What went wrong:
-
-- A suspicious spike/down appeared in recent data.
-
-What we checked:
-
-- series definition
-- non-numeric/suppressed values
-- monthly state coverage
-
-What we changed:
-
-- used only the target series
-- excluded incomplete months
-
-## 4) Credibility Prompt Template
+## Credibility Prompt Template
 
 Use this prompt:
 
-- Validate this workflow. List assumptions, identify possible data quality issues, and propose checks for series definition, missing values, and coverage before interpretation.
+- *Validate this workflow. List assumptions, identify possible data quality issues, and propose checks for series definition, missing values, and coverage before interpretation.*
 
-## 5) How To Summarize
+## How To Summarize
 
 Use a short structure:
 
-1. Main finding
-2. Supporting evidence
-3. Limitation/caution
-4. Policy or course relevance
+- Main finding
+- Supporting evidence
+- Limitation/caution
+- Policy or course relevance
 
-## 5) Summary Prompt Example
+## Summary Prompt Example
 
-- Based on these figures, write 3 findings and 2 limitations in plain language for ECON10 students. Do not claim causality. Keep each bullet to one sentence.
+- *Based on these figures, write 3 findings and 2 limitations in plain language. Do not claim causality. Keep each bullet to one sentence.*
 
 ## Student Exercise: Prompt Lab
 
-1. Write one starter prompt.
-2. Write one credibility-check prompt.
-3. Run code and inspect outputs.
-4. Write one 4-line summary using the structure above.
-5. Share what changed after prompt revision.
+- Write one starter prompt.
+- Write one credibility-check prompt.
+- Run code and inspect outputs.
+- Write one 4-line summary using the structure above.
+- Share what changed after prompt revision.
 
 ## Final Takeaway
 
